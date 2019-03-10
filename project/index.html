@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Yong Yuan - Projects
-description: Yong Yuan's projects. Some of them are my academy research, some are just my interest.
-category: project
+title: Project
+description: Andyni's projects. Some of them are my academy research, some are just my interest.
+category: project-zh
 ---
 
 <link href="../css/video-js.css" rel="stylesheet">
@@ -11,11 +11,13 @@ category: project
 <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
 <p class="fancy">
-  Here are my projects. Some of them are my academy research, and some are just my interest.
+  下面是我做过的一些比较有代表性的项目。有一些是出于硕士研究方向，有一些出于兴趣驱动。
+  <!--<abbr title="User Experience">UX</abbr>?
+  <a href="/contact/">Ping me</a> and let's build awesome and useful stuff!-->
 </p>
 
 <section>
-    <h2>INS: INstance Search</h2>
+    <h2>INS实例搜索系统</h2>
     <video id="my-video" class="video-js" controls preload="auto" width="760" height="475"
   poster="../project/imgs/ins.jpg" data-setup="{}">
     <source src="../project/videos/ins.mp4" type='video/mp4'>
@@ -24,29 +26,12 @@ category: project
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
     </video>
-    <p><strong>My role:</strong> Full developer</p>
+    <p><strong>角色:</strong> 独立开发</p>
     <p>
-     INS is a image retrieval system for instance search. The system can be used to retrieve same object, near-duplicate object, and copy detection, and developing the system is just for interest in my free time. I'll improve the system contiously.
+     INS是一款为实例检索而生的图像检索系统。该系统可用于检索相同物体、近似重复物体以及拷贝检测。开发该系统纯粹出于兴趣，并在空余时间开发完成。后面会持续的对其进行改进。
     </p>
     <p>
-      <strong>Technologies:</strong> CNN, C++, QT, OpenCV, Query Expansion
-    </p>
-</section>
-<div class="spacer"></div>
-
-<section>
-    <a href="https://github.com/willard-yuan/cnn-cbir-benchmark/tree/master/fc_retrieval">
-      <img class="inline pull-right" src="../project/imgs/cnn_cbir_benchmark.png"
-           alt="cnn-cbir-benchmark" width="280">
-    </a>
-    <h2>CNN CBIR Benchmark</h2>
-    <p><strong>My role:</strong> Main developer</p>
-    <p><strong>Project:</strong> <a href="https://github.com/willard-yuan/cnn-cbir-benchmark/tree/master/fc_retrieval"><strong>cnn-cbir-benchmark</strong></a>
-    <p>
-     CNN CBIR Benchmark tries to build a benchmark for image retrieval, particularly for object retrieval. The project has finished three CNN-based CBIR methods and one hand-crafted feature (i.e. fisher vector) method. The project has just released <strong>one FC image retrieval</strong> method. Everything is still going on.
-    </p>
-    <p>
-      <strong>Technologies:</strong> CNN features, Hand-crafted features
+      <strong>Technologies:</strong> CNN, C++, QT, OpenCV，Query Expansion
     </p>
 </section>
 <div class="spacer"></div>
@@ -61,13 +46,13 @@ category: project
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
     </video>
-    <p><strong>My role:</strong> Full developer</p>
+    <p><strong>角色:</strong> 独立开发</p>
     <p><strong>Code:</strong> <a href="https://github.com/willard-yuan/SeetaFaceLib"><strong>SeetaFaceLib</strong></a>
     <p>
-     SeetaFaceLib is face image retrieval and recognition project based on SeetaFaceEngine. I work in a Mac OS envirment, so I'd like to make the SeetaFaceEngine work in Mac OS. I have make some changes to make it work in Xcode. More importantly, I have also built a QT project of face image retrieval.
+     SeetaFaceLib是一个在SeetaFaceEngine基础上构建的一个人脸检索与识别项目。为了使SeetaFaceEngine能够在Mac OS系统下工作，我对它做了些小修改使得它能够在Xcode下工作，更重要的是，我在此基础上为其构建了一个基于QT的人脸检索系统。
     </p>
     <p>
-      <strong>Technologies:</strong> Image Retrieval, Face Recognition, OpenCV, C++, QT
+      <strong>Technologies:</strong> SeetaFaceEngine, FALCONN, OpenCV, C++, QT
     </p>
 </section>
 <div class="spacer"></div>
@@ -82,97 +67,80 @@ category: project
     <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
     </video>
-    <p><strong>My role:</strong> Main developer</p>
+    <p><strong>角色:</strong> 主要开发者</p>
     <p>
-	   The information of pupilTracker will be coming soon.
+       pupilTracker是一个瞳孔跟踪模块，并且它还包含了瞳孔中心到屏幕的映射模块，它能够用在视觉追踪系统中。
     </p>
     <p>
-      <strong>Technologies:</strong> Image Proccessing, OpenCV, C++
+      <strong>所用技术:</strong> Image Proccessing, OpenCV, C++
     </p>
 </section>
 <div class="spacer"></div>
 
 <section>
     <a href="https://github.com/willard-yuan/pkbigdata-image-search">
-      <img class="inline pull-right" src="../project/imgs/oxford.png"
+      <img class="inline pull-right" src="/images/project/oxford.png"
            alt="Oxford Screenshot" width="280">
     </a>
     <h2>DuplicateSearch</h2>
-    <h3>Search results: <a href="https://github.com/willard-yuan/pkbigdata-image-search">Duplicate Search</a></h3>
-    <p><strong>My role:</strong> Develop independently</p>
+    <h3>搜索结果: <a href="https://github.com/willard-yuan/pkbigdata-image-search">Duplicate Search</a></h3>
+    <p><strong>角色:</strong> 单独开发</p>
+    <p>卷积神经网络对于同类搜索能够取得很不错的效果，但对于Duplicate Search任务表现不佳，而实际商业应用对同款搜索应用价值更大，比如搜索衣服、鞋子等，我们希望的是从很大的衣服或鞋子中搜同款。结合开源资源以及对基于关键点结合词包模型的研究，经过一段长时的实现，再经过不断的验证，DuplicateSearch能够取得很好的效果，在oxford building数据库上平均检索精度达到83.35%。在15万大数据上检索结果见上面搜索结果。</p>
     <p>
-    Convolutional Neural Network has been sucessfully applied to image classification, object detection, etc. However, It's not easy to apply it to duplicate search or object retrieval due to the difficult of data enhancement. Duplicate search can be used to many business applications such as searching the same clothes or shoes on Taobao, and I believe it has great application vulae. So after diving into image retrieval based on key point feature such as SIFT, I implement a prototype system based on bag of feature. The performance of the prototype image retrieval system works very well, and the mAP can be achieve to 83.35%. Moreover. I test it on 1500,000 clothes images, and the search result can be found <a href="https://github.com/willard-yuan/pkbigdata-image-search">here</a>.
+      <strong>所用技术:</strong> SIFT, BoVW, Image Retrieval
     </p>
     <p>
-      <strong>Technologies:</strong> SIFT, BoVW, Image Retrieval
-    </p>
-    <p>
-      <strong>Blog post:</strong> <a href="http://yongyuan.name/blog/BoF-VLAD-FV.html">BoF, VLAD and FV for image retrieval (Chinese)</a>
+      <strong>对应博文:</strong> <a href="http://yongyuan.name/blog/BoF-VLAD-FV.html">BoF, VLAD and FV for image retrieval (Chinese)</a>
     </p>
 </section>
 <div class="spacer"></div>
 
 <section>
     <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3">
-      <img class="inline pull-right" src="../project/imgs/cnn_image_retrieval_480.png"
+      <img class="inline pull-right" src="http://ose5hybez.bkt.clouddn.com/pro/CNN-Image-Retrieval480_zpsex5gg9o8.PNG"
            alt="PicSearch Screenshot" width="280">
     </a>
     <h2>PicSearch</h2>
-    <h3>Online demo: <a href="http://search.yongyuan.name">CNN for CBIR (offline now)</a></h3>
-    <p><strong>Video:</strong> <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>natural images</strong></a>, </strong><a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>medical images</strong></a></p>
-    <p><strong>Code:</strong> <a href="https://github.com/willard-yuan/CNN-for-Image-Retrieval"><strong>feature extraction</strong></a>, </strong><a href="https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval"><strong>search online</strong></a></p>
-    <p><strong>My role:</strong> Develop independently</p>
-    <p>After researching CBIR one year, I determined to develop a image retrieval engine demo just
-    for interest. The convolutional neural networks in the comuter vision community develop so
-    fast in recent  years and show great performance with various tasks. So in my spare time I
-    dive to read papers of CNN and program. The dataset of PicSearch engine is Caltech256, which
-    contains 29780 images, and until now it supports query in the dataset only.
+    <h3>在线演示: <a href="http://search.yongyuan.name">CNN for CBIR (已下架)</a></h3>
+	<p><strong>视频:</strong> <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>nature images</strong></a>, </strong><a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>medical images</strong></a></p>
+	<p><strong>代码:</strong> <a href="https://github.com/willard-yuan/CNN-for-Image-Retrieval"><strong>feature extraction</strong></a>, </strong><a href="https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval"><strong>search online</strong></a></p>
+	<p><strong>角色:</strong> 单独开发</p>
+    <p>经过一年对CBIR的研究，出于兴趣驱动，小白菜决定开发一个图像搜索引擎演示系统. 卷积神经网络近几年在计算机视觉社区得到了广泛的发展，并且在很多任务上取得了很好的效果. 所以在平时的空闲时间，利用对阅读的文献的理解进行编码开发。PicSearch原型所用数据库是Caltech256, 该数据库包含有29780幅图像。目前该原型发布的代码只支持库内查询，借助Keras很容易完成在线上传搜索功能。</p>
+    <p>
+      <strong>所用技术:</strong> 卷积神经网络, Python, 图像检索
     </p>
     <p>
-      <strong>Technologies:</strong> CNN, Python, Image Retrieval
-    </p>
-    <p>
-      <strong>Blog post:</strong> <a href="http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html">Image retrieval using MatconvNet and pre-trained imageNet (Chinese)</a>
+      <strong>对应博文:</strong> <a href="http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html">Image retrieval using MatconvNet and pre-trained imageNet (Chinese)</a>
     </p>
 </section>
 <div class="spacer"></div>
 
 <section>
     <a href="http://search.yongyuan.name">
-      <img class="inline pull-right" src="../project/imgs/HABIRH_with_shadow.png"
+      <img class="inline pull-right" src="/images/project/HABIRH_with_shadow.png"
            alt="HABIR Screenshot" width="280">
     </a>
     <h2>HABIR</h2>
-    <h3>Project: <a href="https://github.com/willard-yuan/hashing-baseline-for-image-retrieval.git">Hashing Baseline for Image Retrieval</a></h3>
-    <p><strong>My role:</strong> Develop independently with open sources</p>
-	<p>I do the image retrieval research in early 2013. My mission is to design
-    efficient hashing algorithm to map the semantic similar images to the similar codes.
-    There are two main advantages using hashing method for image retrieval, i.e. storage and
-    computation efficience. To let more researchers focus on design hashing algorithm, I have
-    built a hashing baseline, hoping this project can do some help for some researchers.
-	</p>
+    <h3>项目主页: <a href="http://yongyuan.name/habir">Hashing Baseline for Image Retrieval</a></h3>
+    <p><strong>角色:</strong> 单独开发</p>
+    <p>在2013年初我就开始研究图像检索技术，其中我主要的任务之一就是设计有效的哈希算法，使得语义相似的图片对应的特征经过映射后具有相似的编码。使用哈希方法进行图像检索有两个主要的优势，即节省内存空间以及更高效的匹配速度。为了方便后来人关注于哈希算法的设计，我已经将一些经典的以及最近几年的哈希方法做成了一个对比框架，希望能对后来者有些许帮助。</p>
     <p>
-      <strong>Technologies:</strong> Matlab, Hashing, Image Retrieval
+      <strong>所用技术:</strong> Matlab, 哈希, 图像检索
     </p>
 </section>
 <div class="spacer"></div>
 
 <section>
     <a href="http://search.yongyuan.name">
-      <img class="inline pull-right" src="../project/imgs/pcvh_480.png"
+      <img class="inline pull-right" src="http://ose5hybez.bkt.clouddn.com/pro/PCVH480_zpsoic9wbhb.PNG"
            alt="PCVwithPython Screenshot" width="280">
     </a>
     <h2>PCVwithPython</h2>
-    <h3>Project: <a href="http://yongyuan.name/pcvwithpython">Programming Computer Vision with Python(Translate to Chinese)</a></h3>
-    <p><strong>My role:</strong> equal contribution with one partner</p>
-	<p>I'm a big fun of Python. I think Python is one of the most elegant programming language
-    I have known. It's a great power tool which can be used everywhere, such as write scripts,
-    using Django for web developmentand do science computation. When I first meet the book <Programming
-    Computer Vision with Python>, I was attracted by the book. The content in this book is
-    quite rich and diverse and I can't bear to share the book to more people. So in my free time, I dived into
-    the book and translate it into Chinese. Morover, I organized and supply the codes.</p>
+    <h3>项目主页: <a href="http://yongyuan.name/pcvwithpython">Programming Computer Vision with Python(Translate to Chinese)</a></h3>
+    <p><strong>角色:</strong> 主要译者之一</p>
+    <p>Python粉，并且一直认为Python是我知道的最优雅的编程语言之一。Python作为一门强大的编程语言已经用到了很多地方，比如脚本、Django开发web应用以及科学计算等。在我第一次瞄见<Programming Computer Vision with Python>这本书的时候，我被这本书里的内容深深吸引了。该书内容非常丰富且实战性强，我忍不住想要分享这本书让更多人，所以在空余时间，我沉入这本书中并和另外一个小伙伴翻译它。此外，我还对这本书中的代码进行了整理。</p>
     <p>
-      <strong>Technologies:</strong> Python, Jekyll, Markdown
+      <strong>所用技术:</strong> Python, Jekyll, Markdown
     </p>
 </section>
 <div class="spacer"></div>

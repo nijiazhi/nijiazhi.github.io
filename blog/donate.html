@@ -1,7 +1,7 @@
 ---
 layout: simplePage
 title: Donate
-description: 向小白菜捐赠
+description: donate for better view !
 category: donate
 ---
 
@@ -11,11 +11,12 @@ category: donate
 <link rel="stylesheet" href="../css/site.css">
 <div class="subheader-container">
 <div class = "inner">
-<nav class = "sub-nav">
-    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Home</a>
-    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">Categories</a>
-    <a class="{% if page.category == 'donate' %} selected {% endif %}" href="/blog/donate.html">Donate</a>
-</nav>
+  <nav class = "sub-nav">
+      <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog Home</a>
+      <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">Categories</a>
+      <a class="{% if page.category == 'rss' %} selected {% endif %}" href="/blog/feed.xml">RSS</a>
+      <a class="{% if page.category == 'donate' %} selected {% endif %}" href="/blog/donate.html">Donate</a>
+  </nav>
 </div>
 </div>
 
