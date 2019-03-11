@@ -33,13 +33,13 @@ description: I am Andyni, welcome!
     <ul>
       {% for post in site.posts limit:3 %}
       <li class="post-list-in-index">
-      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small><a  href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small><a  href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>
   </blockquote>
   <p>
-    If you are interested in me, you can access to my <a href="{{ site.url }}/nijiazhi_resume.pdf"><strong>Resume</strong></a> for more details.
+    If you are interested in me, you can access to my <a href="/nijiazhi_resume.pdf"><strong>Resume</strong></a> for more details.
   </p>
   <p>
     Email: 954142793@qq.com
