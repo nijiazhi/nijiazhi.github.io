@@ -5,9 +5,9 @@
   {{ page.title }}
   {% if page.category == 'blog' and page.url != '/blog/' %} - Andyni{% endif %}
 </title>
-<link rel="stylesheet" href="../css/site.css">
-<link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" href="/assets/css/site.css">
+<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+<link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
 <link href="/blog/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
 
@@ -15,6 +15,6 @@
 
 {% if page.category == 'blog' %}
   {% if page.photo %}
-    <meta property="og:image" content="/images/posts/{{ page.photo }}" />
+    <meta property="og:image" content="/assets/images/posts/{{ page.photo }}" />
   {% endif %}
 {% endif %}
