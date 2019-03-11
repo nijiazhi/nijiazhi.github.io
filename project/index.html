@@ -5,10 +5,10 @@ description: Andyni's projects. Some of them are my academy research, some are j
 category: project-zh
 ---
 
-<link href="../css/video-js.css" rel="stylesheet">
+<link href="/assets/css/video-js.css" rel="stylesheet">
 
 <!-- If you'd like to support IE8 -->
-<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
 <p class="fancy">
   下面是我做过的一些比较有代表性的项目。有一些是出于硕士研究方向，有一些出于兴趣驱动。
@@ -19,8 +19,8 @@ category: project-zh
 <section>
     <h2>INS实例搜索系统</h2>
     <video id="my-video" class="video-js" controls preload="auto" width="760" height="475"
-  poster="../project/imgs/ins.jpg" data-setup="{}">
-    <source src="../project/videos/ins.mp4" type='video/mp4'>
+  poster="./imgs/ins.jpg" data-setup="{}">
+    <source src="./videos/ins.mp4" type='video/mp4'>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -39,8 +39,8 @@ category: project-zh
 <section>
     <h2>SeetaFaceLib</h2>
     <video id="my-video" class="video-js" controls preload="auto" width="760" height="475"
-  poster="../project/imgs/faceRetrieval.jpg" data-setup="{}">
-    <source src="../project/videos/可可视觉-人脸搜索.mp4" type='video/mp4'>
+  poster="./imgs/faceRetrieval.jpg" data-setup="{}">
+    <source src="./videos/可可视觉-人脸搜索.mp4" type='video/mp4'>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -60,11 +60,11 @@ category: project-zh
 <section>
     <h2>PupilTracker</h2>
     <video id="my-video" class="video-js" controls preload="auto" width="760" height="475"
-  poster="../project/imgs/eyeTracking.jpg" data-setup="{}">
-    <source src="../project/videos/可可视觉-瞳孔跟踪.mp4" type='video/mp4'>
+  poster="./imgs/eyeTracking.jpg" data-setup="{}">
+    <source src="./videos/可可视觉-瞳孔跟踪.mp4" type='video/mp4'>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
-    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
     </video>
     <p><strong>角色:</strong> 主要开发者</p>
@@ -79,7 +79,7 @@ category: project-zh
 
 <section>
     <a href="https://github.com/willard-yuan/pkbigdata-image-search">
-      <img class="inline pull-right" src="/images/project/oxford.png"
+      <img class="inline pull-right" src="./imgs/oxford.png"
            alt="Oxford Screenshot" width="280">
     </a>
     <h2>DuplicateSearch</h2>
@@ -97,14 +97,14 @@ category: project-zh
 
 <section>
     <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3">
-      <img class="inline pull-right" src="http://ose5hybez.bkt.clouddn.com/pro/CNN-Image-Retrieval480_zpsex5gg9o8.PNG"
+      <img class="inline pull-right" src="./imgs/cnn_image_retrieval_480.png"
            alt="PicSearch Screenshot" width="280">
     </a>
     <h2>PicSearch</h2>
     <h3>在线演示: <a href="http://search.yongyuan.name">CNN for CBIR (已下架)</a></h3>
-	<p><strong>视频:</strong> <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>nature images</strong></a>, </strong><a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>medical images</strong></a></p>
-	<p><strong>代码:</strong> <a href="https://github.com/willard-yuan/CNN-for-Image-Retrieval"><strong>feature extraction</strong></a>, </strong><a href="https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval"><strong>search online</strong></a></p>
-	<p><strong>角色:</strong> 单独开发</p>
+  <p><strong>视频:</strong> <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>nature images</strong></a>, </strong><a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>medical images</strong></a></p>
+  <p><strong>代码:</strong> <a href="https://github.com/willard-yuan/CNN-for-Image-Retrieval"><strong>feature extraction</strong></a>, </strong><a href="https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval"><strong>search online</strong></a></p>
+  <p><strong>角色:</strong> 单独开发</p>
     <p>经过一年对CBIR的研究，出于兴趣驱动，小白菜决定开发一个图像搜索引擎演示系统. 卷积神经网络近几年在计算机视觉社区得到了广泛的发展，并且在很多任务上取得了很好的效果. 所以在平时的空闲时间，利用对阅读的文献的理解进行编码开发。PicSearch原型所用数据库是Caltech256, 该数据库包含有29780幅图像。目前该原型发布的代码只支持库内查询，借助Keras很容易完成在线上传搜索功能。</p>
     <p>
       <strong>所用技术:</strong> 卷积神经网络, Python, 图像检索
@@ -117,7 +117,7 @@ category: project-zh
 
 <section>
     <a href="http://search.yongyuan.name">
-      <img class="inline pull-right" src="/images/project/HABIRH_with_shadow.png"
+      <img class="inline pull-right" src="./imgs/HABIRH_with_shadow.png"
            alt="HABIR Screenshot" width="280">
     </a>
     <h2>HABIR</h2>
@@ -132,7 +132,7 @@ category: project-zh
 
 <section>
     <a href="http://search.yongyuan.name">
-      <img class="inline pull-right" src="http://ose5hybez.bkt.clouddn.com/pro/PCVH480_zpsoic9wbhb.PNG"
+      <img class="inline pull-right" src="./imgs/pcvh_480.png"
            alt="PCVwithPython Screenshot" width="280">
     </a>
     <h2>PCVwithPython</h2>
