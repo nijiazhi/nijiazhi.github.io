@@ -10,15 +10,8 @@ category: donate
 <link rel="stylesheet" href="../css/blog.css">
 <link rel="stylesheet" href="../css/site.css">
 <div class="subheader-container">
-<div class = "inner">
-  <nav class = "sub-nav">
-      <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog Home</a>
-      <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">Categories</a>
-      <a class="{% if page.category == 'rss' %} selected {% endif %}" href="/blog/feed.xml">RSS</a>
-      <a class="{% if page.category == 'donate' %} selected {% endif %}" href="/blog/donate.html">Donate</a>
-  </nav>
-</div>
-</div>
+{% include blog_sub_nav.html %}
+
 
 <style>
 img[alt=drawing] { width: 35%; }
@@ -28,7 +21,7 @@ img[alt=drawing] { width: 35%; }
 <div id="content">
 <div class="pidex">
   <blockquote>
-    <p>如果小白菜的博客或者开源项目对你有帮助，或者觉得这个小白菜这人本身挺有意思，再或者就是有钱任性没处花，愿意打赏小白菜的话，小白菜在这里先行谢过啦！</p>
+    <p> 别白来，求打赏~~~ </p>
   </blockquote>
 </div>
 <h2 id="支付宝扫码">支付宝扫码</h2>
@@ -52,10 +45,6 @@ img[alt=drawing] { width: 35%; }
     <p class="linkings">
         Utils: <a href="http://rogerioferis.com/VisualRecognitionAndSearch2014/Resources.html">rogerioferis</a>&nbsp&nbsp&nbsp&nbsp<a href="http://caffe.berkeleyvision.org/">Caffe</a>&nbsp&nbsp&nbsp&nbsp<a href="http://scikit-learn.org/stable/index.html">scikit-learn</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.astroml.org/index.html">AstroML</a></a>&nbsp&nbsp&nbsp&nbsp<a href="http://scikit-image.org/">scikit-image</a>
     </p>
-    <!--p>
-      Made with <a href="http://jekyllrb.com/">Jekyll</a>,
-      hosted on <a href="https://github.com/willard-yuan/willard-yuan.github.io">Github Pages</a>. Theme inspired by <a href="http://ssaunier.github.io">ssaunier</a>.
-    </p-->
     </p>
       <a href="http://www.easycounter.com/"><img src="http://www.easycounter.com/counter.php?willard"border="0" alt="Website Hit Counter"></a> since August 2013.
     </p>
