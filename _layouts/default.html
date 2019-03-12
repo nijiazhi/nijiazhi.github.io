@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="{% if page.language == nil %}en{% else %}{{ page.language }}{% endif %}">
-<head>
-  {% include head.html %}
-</head>
+  <head>
+    {% include head.html %}
+  </head>
 
-<body>
-  {% include nav.html %}
+  <body>
+    {% include nav.html %}
 
-  {{ content }}
+    {{ content }}
 
-  <!-- <div class="separator"></div> -->
-  <footer style="margin-top: 3cm">
-    <div  style="border-bottom: 1px solid #eee"></div>
-    <p>
-      Made with <a href="http://jekyllrb.com/">Jekyll</a>,
-      hosted on <a href="https://github.com/nijiazhi/nijiazhi.github.io">Github Pages</a>,
-      Inspired by <a href="http://yongyuan.name">Willard</a>,
-      designed by <a href="http://nijiazhi.github.io">Jiazhi Ni</a>.
-    </p>
-  </footer>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-</body>
+    {% include footer.html %}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  </body>
 </html>
