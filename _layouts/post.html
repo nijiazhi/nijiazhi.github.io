@@ -17,21 +17,27 @@ layout: default
       <div class = "post-header">
         <h1>
           {{ page.title }}
-          <a href="{{ site.url }}{{ post.url }}#disqus_thread">评论</a>
         </h1>
         <ul class="meta">
         	<i class="fa fa-calendar"></i>
         	{{ page.date | date: "%Y" }}年{{ page.date | date: "%m" }}月{{ page.date | date: "%d" }}日
-        	<i class="space"></i>
+        	&nbsp&nbsp
+
         	<i class="fa fa-archive"></i>
         	<a class="tag" href="{{ site.url }}/blog/categories.html#{{ page.categories }}">{{ page.categories }}</a>
-        	<i class="space"></i>
+        	&nbsp&nbsp
+
         	<i class="fa fa-tags"></i>
         	{% for tag in page.tags %}
-        	    <a class="tag">{{ tag }}</a>
+        	    <span class="tag">{{ tag }}</span>
         	    <i class="space"></i>
         	{% endfor %}
-        	<i class="space"></i> 字数:{{page.content | size |divided_by:2}}
+          &nbsp&nbsp
+
+          字数:<a>{{page.content | size | divided_by:2}}</a>
+          &nbsp&nbsp
+          
+          评论数:<a href="{{ site.url }}{{ page.url }}#disqus_thread">0</a>
         </ul>
       </div>
     </div>

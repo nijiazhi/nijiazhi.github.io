@@ -2,7 +2,7 @@ title: Andyni
 
 name: Andyni's homepage
 description:  I am Andyni, welcome!
-url: http://nijiazhi.github.io/
+url: http://nijiazhi.github.io
 
 # 自定义post url
 permalink: /blog/:title.html

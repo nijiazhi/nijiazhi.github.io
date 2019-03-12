@@ -22,14 +22,20 @@ category: blog
 
     <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}">    
       <span class='date'>{{ post.date | date: "%b %d" }}</span>
-      <span class='article'>{{ post.title }}</span>
-      <a href="{{ site.url }}{{ post.url }}#disqus_thread">评论</a><br />
+      <span class='article'>{{ post.title }}&nbsp
+        <span style="font-size: 0.3em;color: #939aa1;">
+          (热度:<span href="{{ site.url }}{{ post.url }}#disqus_thread">7</span>)
+        </span>
+      </span>
+
   		<div class="tag-in-index-post">
           <i class="fa fa-tags"></i>
             <div class="tag">
   		        {{ post.tags | first }}
             </div>
       </div>
+
+      
     </a>
     {% endfor %}
   </ul>

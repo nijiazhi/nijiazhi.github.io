@@ -457,7 +457,7 @@ img[alt=drawing] { width: 60%; }
 }
 
 @media (min-width: 768px)
-.post-link-in-posts .date, .post-link-in-posts article {
+.post-link-in-posts .date, .post-link-in-posts .article {
     float: left;
 }
 
@@ -466,7 +466,7 @@ img[alt=drawing] { width: 60%; }
     color: #555;
     margin-right: 3px;
     transition: all 100ms linear;
-	font-size: 0.9rem;
+	  font-size: 0.9rem;
 }
 
 .post-link-in-posts:hover .article {
@@ -479,6 +479,13 @@ img[alt=drawing] { width: 60%; }
     font-size: 0.6em;
 }
 
+.post-link-in-posts .comment {
+    width: 120px;
+    font-size: 0.6em;
+    color: #939aa1;
+    display: inline-block;
+}
+
 .post-link-in-posts .tag {
     color: #939aa1;
     font-weight: normal;
@@ -488,12 +495,12 @@ img[alt=drawing] { width: 60%; }
 }
 
 @media (min-width: 768px)
-.post-link-in-posts .date, .post-link-in-posts .tag {
+.post-link-in-posts .date, .post-link-in-posts .tag, .post-link-in-posts .comment{
     margin-top: 0.2em;
 }
 
 @media (min-width: 768px)
-.post-link-in-posts .tag {
+.post-link-in-posts .tag{
     float: right;
 }
 
