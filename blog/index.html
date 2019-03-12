@@ -24,7 +24,7 @@ category: blog
     <a class='post-link-in-posts' href="{{ post.url }}">
       <span class='date'>{{ post.date | date: "%b %d" }}</span>
       <span class='article'>{{ post.title }}</span>
-      <a href="http://nijiazhi.github.io/blog/Self-disciplined-from-here.html#disqus_thread">评论</a>
+      <a href="{{ site.url }}{{ post.url }}#disqus_thread">评论</a>
   		<div class="tag-in-index-post">
           <i class="fa fa-tags"></i>
             <div class="tag">
@@ -35,3 +35,5 @@ category: blog
     {% endfor %}
   </ul>
 </section>
+
+<script id="dsq-count-scr" src="https://nijiazhi.disqus.com/count.js" async></script>
