@@ -20,14 +20,10 @@ category: blog
 		<span class="listing-seperator">{{ y }}</span>
 	  {% endif %}
 
-    <!-- <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}"> -->    
-    <a class='post-link-in-posts' href="{{ post.url }}">
+    <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}">    
       <span class='date'>{{ post.date | date: "%b %d" }}</span>
       <span class='article'>{{ post.title }}</span>
-      <a href="{{ post.url }}#disqus_thread">评论</a><br />
-      <a> {{ site.url }} </a><br />
-      <a> {{ page.url }} </a><br />
-      <a> {{ post.url }} </a><br />
+      <a href="{{ site.url }}{{ post.url }}#disqus_thread">评论</a><br />
   		<div class="tag-in-index-post">
           <i class="fa fa-tags"></i>
             <div class="tag">
