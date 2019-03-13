@@ -22,11 +22,10 @@ category: blog
 
     <div class='post-link-in-posts'>    
       <span class='date'>{{ post.date | date: "%b %d" }}</span>
-      <a class='article' href="{{ site.url }}{{ post.url }}">{{ post.title }}
-        <span class="comment">
+      <a class='article' href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <span class="comment">
           &nbsp(热度:<a class="comment_hot" href="{{ site.url }}{{ post.url }}#disqus_thread">7</a>)
-        </span>
-      </a>
+      </span>
   		<div class="tag-in-index-post">
           <i class="fa fa-tags"></i>
             <div class="tag">
