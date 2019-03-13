@@ -482,7 +482,10 @@ img[alt=drawing] { width: 60%; }
 .post-link-in-posts .comment {
     font-size: 0.3em;
     color: #939aa1;
-    display: block inline;
+}
+
+.post-link-in-posts .comment_hot {
+    font-size: 0.4em;
 }
 
 .post-link-in-posts .tag {
