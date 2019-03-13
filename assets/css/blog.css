@@ -480,10 +480,9 @@ img[alt=drawing] { width: 60%; }
 }
 
 .post-link-in-posts .comment {
-    width: 120px;
-    font-size: 0.6em;
+    font-size: 0.3em;
     color: #939aa1;
-    display: inline-block;
+    display: block inline;
 }
 
 .post-link-in-posts .tag {
