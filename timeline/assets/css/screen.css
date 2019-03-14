@@ -109,7 +109,7 @@ div.timelineMajor {
 }
 
 .timelineMajor h2 {
-    background: url(../images/timeline_century_tick.gif) left center no-repeat;
+    background: url(../imgs/timeline_century_tick.gif) left center no-repeat;
     font-family: "Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-seri;
     cursor: pointer;
     /**font-size: 3em;**/
@@ -139,7 +139,7 @@ dl.timelineMinor {
 }
 
 .timelineMinor dt {
-    background: url(../images/timeline_decade_tick.gif) left center no-repeat;
+    background: url(../imgs/timeline_decade_tick.gif) left center no-repeat;
     clear: left;
     font-size: 1.6em;
     list-style-type: none;
