@@ -16,7 +16,8 @@ category: project
 
 <section>
     <h2>病人相似性研究</h2>
-    <video id="my-video" class="video-js" controls preload="auto" width="760" height="475"
+    <!-- use 4:3 picture -->
+    <video id="my-video" class="video-js" controls preload="auto" width="760" height="427"
   poster="./patientSimilarity/home.jpg" data-setup="{}">
     <source src="./patientSimilarity/home.mp4" type='video/mp4'>
     <p class="vjs-no-js">
@@ -24,110 +25,96 @@ category: project
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
     </video>
-    <p><strong>角色:</strong> 独立开发</p>
+    <p><strong>角色:</strong> 核心开发 </p>
     <p>
-     基于深度度量学习的
+      旨在利用历史健康数据（门诊记录，住院记录等）对健康主体进行建模，结合领域专家信息实现有监督的度量学习
+      进而产生有效的相似度度量方式，最终利用其进行检索
     </p>
     <p>
-      <strong>Technologies:</strong> CNN, C++, QT, OpenCV，Query Expansion
+      <strong>Technologies:</strong> deep metric learning、multi-label classify、自动编码机、回归预测、信息检索、数据索引与缓存、tensorflow
     </p>
 </section>
 <div class="spacer"></div>
 
 <section>
-    <h2>SeetaFaceLib</h2>
-    <video id="my-video" class="video-js" controls preload="auto" width="760" height="475"
-  poster="./imgs/faceRetrieval.jpg" data-setup="{}">
-    <source src="./videos/可可视觉-人脸搜索.mp4" type='video/mp4'>
+    <h2>悟空机器人</h2>
+    <video id="my-video" class="video-js" controls preload="auto" width="760" height="427"
+  poster="./wuKong/home.jpg" data-setup="{}">
+    <source src="./wuKong/home.mp4" type='video/mp4'>
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
     </video>
     <p><strong>角色:</strong> 独立开发</p>
-    <p><strong>Code:</strong> <a href="https://github.com/willard-yuan/SeetaFaceLib"><strong>SeetaFaceLib</strong></a>
     <p>
-     SeetaFaceLib是一个在SeetaFaceEngine基础上构建的一个人脸检索与识别项目。为了使SeetaFaceEngine能够在Mac OS系统下工作，我对它做了些小修改使得它能够在Xcode下工作，更重要的是，我在此基础上为其构建了一个基于QT的人脸检索系统。
+     使用悟空机器人提供的sdk-API完成对机器人的操作，包括机器人的四肢、眼睛、语音等位置。自己设计了机器人说相声、老虎机、主人识别三项功能。感兴趣可以观看<a href="https://open.ubtrobot.com/#/workDetail?id=798&userId=0">全部视频</a>
     </p>
     <p>
-      <strong>Technologies:</strong> SeetaFaceEngine, FALCONN, OpenCV, C++, QT
+      <strong>Technologies:</strong> java、设计模式、机器人设计
     </p>
 </section>
 <div class="spacer"></div>
+
 
 <section>
-    <h2>PupilTracker</h2>
-    <video id="my-video" class="video-js" controls preload="auto" width="760" height="475"
-  poster="./imgs/eyeTracking.jpg" data-setup="{}">
-    <source src="./videos/可可视觉-瞳孔跟踪.mp4" type='video/mp4'>
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-    </video>
-    <p><strong>角色:</strong> 主要开发者</p>
-    <p>
-       pupilTracker是一个瞳孔跟踪模块，并且它还包含了瞳孔中心到屏幕的映射模块，它能够用在视觉追踪系统中。
-    </p>
-    <p>
-      <strong>所用技术:</strong> Image Proccessing, OpenCV, C++
-    </p>
+  <img class="inline pull-right" style="padding-left: 15px;" src="./imgs/bus_tianchi.jpg" alt="" width="280">
+  <h2>广东·公交线路客流预测（阿里天池比赛）</h2>
+  <p><strong>角色:</strong> 独立开发</p>
+  <p>根据广州市<u>2014年8月1日至2014年12月31日</u>五个月的公交刷卡数据（6时-21时）对公交行为进行建模，数据涉及 200万用户、2条线路（共计约800万条数据），同时提供天气状况，预测次年1.1-1.7的分时段流量数据(含假日)。主要完成了公交模型设计、特征工程、回归算法的研究及使用、时序性数据的研究
+  </p>
+  <p>
+    <strong>所用技术:</strong> Python(sklearn)、GBDT、RF、线性模型
+  </p>
 </section>
 <div class="spacer"></div>
+
 
 <section>
-    <a href="https://github.com/willard-yuan/pkbigdata-image-search">
-      <img class="inline pull-right" src="./imgs/oxford.png"
-           alt="Oxford Screenshot" width="280">
-    </a>
-    <h2>DuplicateSearch</h2>
-    <h3>搜索结果: <a href="https://github.com/willard-yuan/pkbigdata-image-search">Duplicate Search</a></h3>
-    <p><strong>角色:</strong> 单独开发</p>
-    <p>卷积神经网络对于同类搜索能够取得很不错的效果，但对于Duplicate Search任务表现不佳，而实际商业应用对同款搜索应用价值更大，比如搜索衣服、鞋子等，我们希望的是从很大的衣服或鞋子中搜同款。结合开源资源以及对基于关键点结合词包模型的研究，经过一段长时的实现，再经过不断的验证，DuplicateSearch能够取得很好的效果，在oxford building数据库上平均检索精度达到83.35%。在15万大数据上检索结果见上面搜索结果。</p>
+   <img class="inline pull-right" style="padding-left: 15px;" src="./imgs/location.jpg" alt="" width="200">
+    <h2>定位算法研究 · 指纹定位</h2>
+    <p><strong>角色:</strong> 核心开发</p>
     <p>
-      <strong>所用技术:</strong> SIFT, BoVW, Image Retrieval
+      普适场景下，很多时候无法利用GPS（与GPS原理有关）进行定位，<u>例如：商场门口打车、家里叫外卖这类场景</u>。指纹定位有效的解决了这一难题，其定位精度比单纯利用mac的聚类定位要高很多。具体做法是将地图划分为一个个小方格，每个格子利用mac信息和定位热度生成其独有的特征，众多格子进行排序，找到最有可能发生定位的那个方格，即为最终的定位目标。<br/>
+      由此可见，指纹定位问题最终转化为了排序问题，项目中使用learn to rank的思路解决这一问题，主要应用了pairwise和listwise方法（目前定位精度约20m）
     </p>
     <p>
-      <strong>对应博文:</strong> <a href="http://yongyuan.name/blog/BoF-VLAD-FV.html">BoF, VLAD and FV for image retrieval (Chinese)</a>
+      <strong>所用技术:</strong> sklearn、lightGBM、xgboost
     </p>
 </section>
 <div class="spacer"></div>
+
 
 <section>
-    <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3">
-      <img class="inline pull-right" src="./imgs/cnn_image_retrieval_480.png"
-           alt="PicSearch Screenshot" width="280">
-    </a>
-    <h2>PicSearch</h2>
-    <h3>在线演示: <a href="http://search.yongyuan.name">CNN for CBIR (已下架)</a></h3>
-  <p><strong>视频:</strong> <a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>nature images</strong></a>, </strong><a href="http://v.youku.com/v_show/id_XOTM4MzgxODY4.html?f=23766923&from=y1.7-1.3"><strong>medical images</strong></a></p>
-  <p><strong>代码:</strong> <a href="https://github.com/willard-yuan/CNN-for-Image-Retrieval"><strong>feature extraction</strong></a>, </strong><a href="https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval"><strong>search online</strong></a></p>
-  <p><strong>角色:</strong> 单独开发</p>
-    <p>经过一年对CBIR的研究，出于兴趣驱动，小白菜决定开发一个图像搜索引擎演示系统. 卷积神经网络近几年在计算机视觉社区得到了广泛的发展，并且在很多任务上取得了很好的效果. 所以在平时的空闲时间，利用对阅读的文献的理解进行编码开发。PicSearch原型所用数据库是Caltech256, 该数据库包含有29780幅图像。目前该原型发布的代码只支持库内查询，借助Keras很容易完成在线上传搜索功能。</p>
+   <img class="inline pull-right" style="padding-left: 15px;" src="./imgs/bus_rt.jpg" alt="" width="200">
+    <h2>实时公交</h2>
+    <p><strong>角色:</strong> 核心开发</p>
     <p>
-      <strong>所用技术:</strong> 卷积神经网络, Python, 图像检索
+      信息化时代，人们对公共交通的依赖程度变高，而且用户对公交交通的服务水平要求也在变高。人们不再单纯的希望知道公交车怎样乘坐，甚至于想知道公交车的实时位置，以便于进行出行决策。<br />
+      项目中利用公交车上的wifi信息，实时判定公交车的位置，主要包扩处理公交线路数据，提取公交线路特征，对公交路线进行建模；设计并实现基于MapReduce的用户WiFi定位数据挖掘算法，用于实现用户与公交线路的匹配
     </p>
     <p>
-      <strong>对应博文:</strong> <a href="http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html">Image retrieval using MatconvNet and pre-trained imageNet (Chinese)</a>
+      <strong>所用技术:</strong> Hadoop、spark、sklearn
     </p>
 </section>
 <div class="spacer"></div>
+
 
 <section>
-    <a href="http://search.yongyuan.name">
-      <img class="inline pull-right" src="./imgs/HABIRH_with_shadow.png"
-           alt="HABIR Screenshot" width="280">
-    </a>
-    <h2>HABIR</h2>
-    <h3>项目主页: <a href="http://yongyuan.name/habir">Hashing Baseline for Image Retrieval</a></h3>
-    <p><strong>角色:</strong> 单独开发</p>
-    <p>在2013年初我就开始研究图像检索技术，其中我主要的任务之一就是设计有效的哈希算法，使得语义相似的图片对应的特征经过映射后具有相似的编码。使用哈希方法进行图像检索有两个主要的优势，即节省内存空间以及更高效的匹配速度。为了方便后来人关注于哈希算法的设计，我已经将一些经典的以及最近几年的哈希方法做成了一个对比框架，希望能对后来者有些许帮助。</p>
+    <img class="inline pull-right" style="padding-left: 15px;" src="./imgs/haflow.png" alt="" width="280">
+    <h2>Haflow·大数据分析平台·国家863项目</h2>
+    <p><strong>角色:</strong> 核心开发</p>
+    <p>一站式大数据分析应用开发平台，支持多种大数据处理分析框架的接入，并借助其分布式存储和计算能力，加快大数据分析的速度。构建基于 Web 的拖曳式的数据分析应用开发界面，同时将用户从平台搭建，工具集成，接口学习，算法管理，实验脚本编写和多任务调度等繁杂工作中抽离出来。<br />
+    主要设计并实现系统基础架构；基于Hbase的中间数据管理；设计基于组件以及模型驱动的数据分析业务流程处理框架，设计与实现基于嵌套图识别与分层的模型转换算法
+    </p>
     <p>
-      <strong>所用技术:</strong> Matlab, 哈希, 图像检索
+      <strong>所用技术:</strong> Hadoop，MapReduce优化，Hbase，Hibernate，数据流模型转换、Spring MVC
     </p>
 </section>
 <div class="spacer"></div>
 
+
+<!-- 
 <section>
     <a href="http://search.yongyuan.name">
       <img class="inline pull-right" src="./imgs/pcvh_480.png"
@@ -142,3 +129,4 @@ category: project
     </p>
 </section>
 <div class="spacer"></div>
+-->
