@@ -6,7 +6,59 @@ tags: Python
 ---
 
 ## Conda是什么？
+Conda 是为 Python 程序创建的，目前最流行的环境管理工具。
 
-## Conda-AnaConda-MiniConda
+它是开源的软件包管理系统和环境管理系统，用于安装多个版本的软件包及其依赖关系，并在它们之间轻松切换，适用于 Linux / Windows。值得说明的是 Conda 将 Python 也作为一个包，进行版本管理。
+
+## Conda vs pip
+普通安装 Python 的时候一般都是自带 pip 管理器的。 Conda 与 pip 最大的不同之处是，当我们需要管理的packages不仅仅局限于 Python 语言时，Conda 是更好的选择。如果不用 Conda 也是可以的，但是就需要用 pip + 其他语言管理器实现替代。
+
+所以 Conda 要做比 pip 更多的事情，在 python-site-packages 之外管理 Python 库依赖关系，让你同时管理安装处理你有关Python的任务和跟Python无关的任务。
+
+另外，Conda 使用了一个新的包格式，pip 不能安装和解析 Conda 的包格式，你可以使用这两个工具，但是他们是不能交互的。
+
+## Conda - AnaConda - MiniConda
+网络上比较常见的是AnaConda，这里来具体说明三者的关系：
+
+- **Anaconda**：用于科学计算的python发行版，里面预装好了conda，某个版本的python，众多packages，科学计算工具（[Jupyter Notebook](/blog/JupyterNotebook.html)、Spyder）等。 Anaconda利用工具/命令conda来进行package和environment的管理，并且已经包含了python和相关配套工具。
+- **Conda**：可以理解为一个工具，也是一个可执行命令，其核心功能是包管理与环境管理。包管理与pip的使用类似，环境管理则允许用户方便地安装不同版本的python并可以快速切换。
+- **Miniconda**：只含有最基本的内容python、conda，以及相关的必须依赖项，对于空间要求严格/希望精简编程的用户，Miniconda是一个很好的选择。
+
+一般，Anaconda需要2G左右，Miniconda不到100M，而且Anaconda中的很多功能用不到，所以科学环境初步搭建推荐大家使用Miniconda~
+
 
 ## 必须知道的Conda命令
+这里mark一下常用的命令，未完待续~
+
+- 包管理（查看、安装、更新、删除）
+```
+1. conda list              #查看当前环境下已安装的包
+2. conda list -n python34  #查看某个指定环境的已安装包
+3. conda search requests   #查找package信息
+4. conda install requests  #安装package
+5. conda install -n python34 requests #如果不用-n指定环境名称，则被安装在当前活跃环境(已指定环境)
+6. conda update requests   #更新package（可指定环境）
+7. conda remove requests   #删除package（可指定环境）
+8. conda update conda      #更新conda,保持conda最新
+9. conda update anaconda   #更新anaconda
+10. conda update python    #更新python(若当前环境是python3.6，conda会将其升级为3.6x系列的当前最新版本)
+```
+
+
+- 环境管理
+
+    conda管理不同版本的python，自由进行切换。激活环境后，会发现terminal输入的地方多了python34的字样，实际上，此时系统做的事情就是把默认2.7环境从PATH中去除，再把3.4对应的命令加入PATH
+    ```
+    1. activate py34                    #for Windows，使用activate激活某个环境
+    2. source activate py34             #for Linux & Mac，使用activate激活某个环境
+    3. deactivate py34                  #for Windows，想返回默认的python 2.7环境
+    4. source deactivate py34           #for Linux & Mac，想返回默认的python 2.7环境
+    5. conda remove --name py34 --all   #删除已有的环境
+    6. conda create --name py34 python=3.4  # 创建名为py34的环境，指定Python版本是3.4（不用管是3.4.x，conda会自动寻找3.4.x中的最新版本）
+    ```
+
+
+---
+## 相关引用
+1. [conda官网](https://conda.io/en/latest/)
+2. [anaconda官网](https://www.anaconda.com/)

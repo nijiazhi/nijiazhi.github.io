@@ -91,9 +91,9 @@ Jupyter有两种启动方式比较常用：
 
 ## 用户密码
 
-- cmd中生成jupyter的配置文件：jupyter notebook --generate-config
-- cmd继续输入：jupyter notebook password （会输入两次密码）
-- 密码设置成功，登录服务器： jupyter notebook
+- cmd中生成jupyter的配置文件：`jupyter notebook --generate-config`
+- cmd继续输入：`jupyter notebook password` （会输入两次密码）
+- 密码设置成功，登录服务器： `jupyter notebook`
 ![jupyter password](/assets/images/blog/jupyter/jupyter_password.png)
 
 
