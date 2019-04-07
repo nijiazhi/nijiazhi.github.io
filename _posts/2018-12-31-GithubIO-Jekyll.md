@@ -9,12 +9,15 @@ tags: GithubIO-Jekyll
 >本文部分内容引用了[leach_chen的博客](https://www.jianshu.com/p/9f71e260925d)
 
 ## GithubIO
-GithubIO是GitHub提供的一个免费的静态网站，搭建这个个人网站可基于jekyll或者hexo，选择哪个就看个人喜好了，我这里选择的是jekyll，主要是因为网上相关的资料比较多，遇到问题比较好解决。
+GithubIO其实是GitHub Pages，它是GitHub提供的一个免费的项目介绍网站，在项目的Settings里可以进行配置。
+![GitHub Pages](/assets/images/blog/githubIO/githubIO.png)
+
+这个强大GitHub Pages刚好可以用于搭建个人网站，目前基于jekyll或者hexo的网站居多，选择哪个就看个人喜好了，我这里选择的是jekyll，主要是因为网上相关的资料比较多，遇到问题比较好解决。主要的步骤如下：
 
 1. 首先你要到GitHub上注册一个账号，例如我注册的用户名为：nijiazhi（用户名可以在设置里改）
 2. 点击New repository–>输入仓库名称格式为：用户名.github.io(如：nijiazhi.github.io)->点击Create repository
 3. 浏览器里访问 https://nijiazhi.github.io ，可以发现这个url可以被访问了
-4. 把仓库代码拉取到本地，然后在里面新建一个index.html的文件,在里面输入任意内容，然后再把代码推送到git上，然后再访问改链接，可以发现index.html里面的内容被访问到了
+4. 把仓库代码拉取到本地，然后在里面新建一个index.html的文件，在里面输入任意内容，然后再把代码推送到git上，然后再访问改链接，可以发现index.html里面的内容被访问到了
 
 到这里，一个免费且无限流量的github代码托管仓库就创建完成了，剩余的部分就是如何写这个静态的网站。
 
