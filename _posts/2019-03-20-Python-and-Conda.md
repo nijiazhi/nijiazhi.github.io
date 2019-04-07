@@ -20,7 +20,7 @@ Conda 是为 Python 程序创建的，目前最流行的环境管理工具。
 ## Conda - AnaConda - MiniConda
 网络上比较常见的是AnaConda，这里来具体说明三者的关系：
 
-- **Anaconda**：用于科学计算的python发行版，里面预装好了conda，某个版本的python，众多packages，科学计算工具（[Jupyter Notebook](/blog/JupyterNotebook.html)、Spyder）等。 Anaconda利用工具/命令conda来进行package和environment的管理，并且已经包含了python和相关配套工具。
+- **Anaconda**：用于科学计算的Python发行版，里面预装好了Conda，某个版本的Python，众多packages，科学计算工具（[Jupyter Notebook](/blog/JupyterNotebook.html)、Spyder）等。 Anaconda利用工具/Conda命令来进行package和environment的管理。
 - **Conda**：可以理解为一个工具，也是一个可执行命令，其核心功能是包管理与环境管理。包管理与pip的使用类似，环境管理则允许用户方便地安装不同版本的python并可以快速切换。
 - **Miniconda**：只含有最基本的内容python、conda，以及相关的必须依赖项，对于空间要求严格/希望精简编程的用户，Miniconda是一个很好的选择。
 
@@ -30,24 +30,26 @@ Conda 是为 Python 程序创建的，目前最流行的环境管理工具。
 ## 必须知道的Conda命令
 这里mark一下常用的命令，未完待续~
 
-- 包管理（查看、安装、更新、删除）
-```
-1. conda list              #查看当前环境下已安装的包
-2. conda list -n python34  #查看某个指定环境的已安装包
-3. conda search requests   #查找package信息
-4. conda install requests  #安装package
-5. conda install -n python34 requests #如果不用-n指定环境名称，则被安装在当前活跃环境(已指定环境)
-6. conda update requests   #更新package（可指定环境）
-7. conda remove requests   #删除package（可指定环境）
-8. conda update conda      #更新conda,保持conda最新
-9. conda update anaconda   #更新anaconda
-10. conda update python    #更新python(若当前环境是python3.6，conda会将其升级为3.6x系列的当前最新版本)
-```
+- **包管理**
+
+    管理Python相关的包，主要是查看、安装、更新、删除等功能。
+    ```
+    1. conda list              #查看当前环境下已安装的包
+    2. conda list -n python34  #查看某个指定环境的已安装包
+    3. conda search requests   #查找package信息
+    4. conda install requests  #安装package
+    5. conda install -n python34 requests #如果不用-n指定环境名称，则被安装在当前活跃环境(已指定环境)
+    6. conda update requests   #更新package（可指定环境）
+    7. conda remove requests   #删除package（可指定环境）
+    8. conda update conda      #更新conda,保持conda最新
+    9. conda update anaconda   #更新anaconda
+    10. conda update python    #更新python(若当前环境是python3.6，conda会将其升级为3.6x系列的当前最新版本)
+    ```
 
 
-- 环境管理
+- **环境管理**
 
-    conda管理不同版本的python，自由进行切换。激活环境后，会发现terminal输入的地方多了python34的字样，实际上，此时系统做的事情就是把默认2.7环境从PATH中去除，再把3.4对应的命令加入PATH
+    Conda 管理不同版本的 Python，自由进行切换。激活环境后，会发现terminal输入的地方多了python34的字样，实际上，此时系统做的事情就是把默认2.7环境从PATH中去除，再把3.4对应的命令加入PATH。
     ```
     1. activate py34                    #for Windows，使用activate激活某个环境
     2. source activate py34             #for Linux & Mac，使用activate激活某个环境
