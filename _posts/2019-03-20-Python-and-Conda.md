@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Conda-Python科学环境搭建
+title: 利用Conda搭建Python科学环境
 categories: [编程必备]
-tags: Python
+tags: Conda
 ---
 
 ## Conda是什么？
