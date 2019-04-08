@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jupyter小技巧
+title: 技巧篇：Jupyter
 categories: [编程必备]
 tags: JupyterNotebook
 ---

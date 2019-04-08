@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SublimeText小技巧
+title: 技巧篇：SublimeText
 categories: [编程必备]
 tags: SublimeText
 ---
