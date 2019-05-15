@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 梯度下降-算法浅析
-categories: [机器学习]
-tags: 梯度下降 凸优化
+title: 优化问题-梯度下降
+categories: [机器学习 优化问题]
+tags: 梯度下降
 ---
 
 ## 背景
