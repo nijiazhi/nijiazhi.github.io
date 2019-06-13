@@ -4,7 +4,19 @@ title: 你真的了解逻辑回归？
 categories: [LogisticRegression]
 tags: LogisticRegression
 ---
-[TOC]
+
+Index
+---
+<!-- TOC -->
+
+
+- [背景](#背景)
+- [Logit函数](#Logit函数)
+    - [Sigmoid函数](#Sigmoid函数)
+- [Sigmoid函数](#Sigmoid函数)
+- [Softmax函数](#Softmax函数)
+
+<!-- /TOC -->
 
 ## 背景
 
