@@ -6,14 +6,13 @@ tags: LogisticRegression
 ---
 
 #### Index
-<!-- TOC -->
 
+<!-- TOC -->
 - [背景](#背景)
 - [Logit函数](#Logit函数)
     - [Sigmoid函数](#Sigmoid函数)
 - [Sigmoid函数](#Sigmoid函数)
 - [Softmax函数](#Softmax函数)
-
 <!-- /TOC -->
 
 ---
@@ -24,9 +23,6 @@ tags: LogisticRegression
 ## Sigmoid函数
 
 ## Softmax函数
-
-test
----
 
 ---
 ## 相关引用
