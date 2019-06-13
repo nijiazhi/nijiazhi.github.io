@@ -5,10 +5,7 @@ categories: [LogisticRegression]
 tags: LogisticRegression
 ---
 
-#### Index1
-
-
-
+### Index
 <!-- TOC -->
 - [背景](#背景)
 - [Logit函数](#Logit函数)
