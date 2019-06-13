@@ -5,7 +5,7 @@ categories: [LogisticRegression]
 tags: LogisticRegression
 ---
 
-Index
+#### Index
 <!-- TOC -->
 
 - [背景](#背景)
@@ -25,6 +25,8 @@ Index
 
 ## Softmax函数
 
+test
+---
 
 ---
 ## 相关引用
