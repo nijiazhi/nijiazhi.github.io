@@ -1,31 +1,20 @@
 ---
 layout: post
-title: 你真的了解逻辑回归？
-categories: [LogisticRegression]
-tags: LogisticRegression
+title: 逻辑回归和玻尔兹曼还有关系？
+categories: [BoltzmannMachine]
+tags: BoltzmannMachine
 ---
 
 ### Index
 <!-- TOC -->
 - [背景](#背景)
-- [Logit函数](#Logit函数)
-    - [Sigmoid函数](#Sigmoid函数)
-- [Sigmoid函数](#Sigmoid函数)
-- [Softmax函数](#Softmax函数)
 <!-- /TOC -->
 
 ---
 ## 背景
 
-## Logit函数
-
-## Sigmoid函数
-
-## Softmax函数
-
 ---
 ## 相关引用
-1. [Logit wikipedia](https://en.wikipedia.org/wiki/Logit)
-2. [浅入深出被人看扁的逻辑回归](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247484011&idx=1&sn=42e4f331db843091c5c3809a4d259fad&chksm=970c2abda07ba3abb3963c2defcc644582f28bbdc23f3d669d022cd032e637d2ca8b6b48ca62&scene=21#wechat_redirect)
-3. [深入深出Sigmoid与Softmax的血缘关系](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247484122&idx=1&sn=41628bf3169b9ef3fa107646d483bae5&chksm=970c2a0ca07ba31ae1939e316c15695c83556c347e0b38bb80dde3048533de7de388ec2a6544&scene=21#wechat_redirect)
-4. [Logit模型和Logistic模型有什么区别？](https://zhuanlan.zhihu.com/p/30659982)
+1. [受限玻尔兹曼机(Restricted Boltzmann Machine)分析](https://www.cnblogs.com/how-chang/p/9638684.html)
+2. [AutoEncoder、RBM、DBM、DBN初探](https://blog.csdn.net/u010025211/article/details/50553825)
+3. [受限制玻尔兹曼机(Restricted Bolzmann Machine)以及自编码器(Autoencoder)](https://www.ph0en1x.space/2018/02/15/RBM)
