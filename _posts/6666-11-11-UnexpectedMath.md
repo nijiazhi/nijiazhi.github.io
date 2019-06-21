@@ -17,8 +17,10 @@ tags: UnexpectedMath
 
 
 ## Laplace平滑
-拉普拉斯平滑，
+中文名称：拉普拉斯平滑
+
 在估计条件概率$P(X|Y)$时出现概率为0的情况怎么办？
+
 简单来说：引入$λ，当λ=1$时称为拉普拉斯平滑。
 
 
@@ -52,3 +54,4 @@ $f(x)=|x|，K=1$  符合利普希茨(Lipschitz)条件。
 
 ---
 ## 相关引用
+1. [Lipschitz常数、Lipschitz条件](https://blog.csdn.net/Chaolei3/article/details/81202544)
