@@ -8,7 +8,7 @@ tags: UnexpectedMath
 ### Index
 <!-- TOC -->
 - [背景](#背景)
-- [Laplace平滑](Laplace平滑)
+- [Laplace平滑](#Laplace平滑)
 <!-- /TOC -->
 
 ---
