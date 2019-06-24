@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 意想不到的数学名词
+title:数学之美
 categories: [Math]
-tags: UnexpectedMath
+tags: Math
 ---
 
 ### Index
