@@ -8,8 +8,8 @@ tags: Math
 ### Index
 <!-- TOC -->
 - [背景](#背景)
-- [Laplace平滑](#Laplace平滑)
-- [Lipschitz条件](## Lipschitz条件)
+- [Laplace平滑1](#Laplace平滑)
+- [Lipschitz条件](#Lipschitz条件)
 <!-- /TOC -->
 
 ---
