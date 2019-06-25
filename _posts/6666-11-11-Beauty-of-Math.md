@@ -1,6 +1,6 @@
 ---
 layout: post
-title:数学之美
+title: 数学之美
 categories: [Math]
 tags: Math
 ---
