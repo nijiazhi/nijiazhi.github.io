@@ -30,6 +30,7 @@ tags: NaiveBayes
 网络中每个节点都有一个‘条件概率表’
 
 贝叶斯网络最终刻画的是结点所代表的随机变量的联合概率密度（joint distribution）
+
 ### 条件独立case
 1. tail-to-tail
 2. head-to-tail
