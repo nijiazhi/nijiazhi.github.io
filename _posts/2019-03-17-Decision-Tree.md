@@ -67,7 +67,7 @@ tags: 决策树
 
 $$
 \begin{equation}
-   P(X = x_i) = p_i, i = 1, 2, ...,n
+   P(X = x_i) = p_i  (i = 1, 2, ...,n)
 \end{equation}
 $$
 
@@ -182,7 +182,7 @@ $$
 
 $$
 \begin{aligned}
-H(Y|X) = \sum_{i=1}^np_iH(Y|X=x_i)
+H(Y|X) = \sum_{i=1}^n p_iH(Y|X=x_i)
 \end{aligned}
 $$
 
