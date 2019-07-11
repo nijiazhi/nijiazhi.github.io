@@ -2,7 +2,7 @@
 layout: post
 title: 从点滴开始的自律
 categories: [Life]
-tags: 生活
+tags: self-disciplined
 ---
 
 > 自律让我自由

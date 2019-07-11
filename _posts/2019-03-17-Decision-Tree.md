@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 基础机器学习：决策树
-categories: [机器学习]
-tags: 决策树
+categories: [Machine Learning]
+tags: decision tree
 ---
 
 ## 背景
