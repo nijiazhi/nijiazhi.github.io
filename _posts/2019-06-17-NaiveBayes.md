@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 朴素贝叶斯
-categories: [机器学习]
+categories: [Machine Learning]
 tags: NaiveBayes
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 技巧篇：Jupyter
-categories: [编程必备]
+categories: [Programming Tools]
 tags: JupyterNotebook
 ---
 

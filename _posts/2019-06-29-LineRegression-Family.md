@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 博大精深的线性回归
-categories: [机器学习]
+categories: [Machine Learning]
 tags: LineRegression
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 由浅入深搞定最大熵模型
-categories: [机器学习]
+categories: [Machine Learning]
 tags: MaximumEntropyModel
 ---
 

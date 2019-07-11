@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 优化问题：梯度下降
-categories: [机器学习]
+categories: [Machine Learning]
 tags: GradientDecent
 ---
 

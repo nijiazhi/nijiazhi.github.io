@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 数学之美
-categories: [Math]
+categories: [Mathematics]
 tags: Math
 ---
 
 ### Index
 <!-- TOC -->
 - [背景](#背景)
-- [Laplace平滑1](#Laplace平滑)
+- [Laplace平滑](#Laplace平滑)
 - [Lipschitz条件](#Lipschitz条件)
 <!-- /TOC -->
 
