@@ -22,7 +22,7 @@ Sublime Text具有漂亮的用户界面和强大的功能，例如代码缩略�
 5. **Table Editor**：表格格式化+自动完成；
 
 ---
-## 相关引用
+# 相关引用
 1. [SublimeText官网](http://www.sublimetext.com/)
 2. [SublimeText下的markdown插件的安装及配置](https://www.cnblogs.com/Sinte-Beuve/p/5148108.html)
 3. [SublimeText下的markdown插件](https://www.jianshu.com/p/7cbd50058ea3)

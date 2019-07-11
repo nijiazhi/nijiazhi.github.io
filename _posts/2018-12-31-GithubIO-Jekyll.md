@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GithubIO+Jekyll搭建个人网站
-categories: [编程必备]
+categories: [Programming Tools]
 tags: GithubIO-Jekyll
 ---
 
@@ -58,7 +58,7 @@ Jekyll目录结构主要包含如下目录：
 
 
 ---
-## 相关引用
+# 相关引用
 1. [GitHub Pages(GithubIO)](https://pages.github.com/)
 2. [Jekyll官网](http://jekyllcn.com/)
 3. [Jekyll主题](http://jekyllthemes.org/)

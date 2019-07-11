@@ -8,6 +8,9 @@ tags: MaximumEntropyModel
 ### Index
 <!-- TOC -->
 - [背景](#背景)
+- [关于熵的几个概念](#关于熵的几个概念)
+- [最大熵原理](#最大熵原理)
+- [最大熵模型](#最大熵模型)
 <!-- /TOC -->
 
 ---
@@ -19,11 +22,12 @@ tags: MaximumEntropyModel
 - 条件熵(Conditional Entropy)
 - 相对熵(Relative Entropy，也称为KL散度，Kullback–Leibler divergence)
 - 交叉熵(Cross entropy)
-懂了你就跳过去，不懂咱就先讲讲，最大熵原理和模型最后再说
+
+懂了你就跳过去，不懂咱就先讲讲，最大熵原理和模型最后再说。
 
 ## 关于熵的几个概念
 ### 自信息(Self-information)
-### 熵
+### 熵(Entropy)
 ### 联合熵(Joint Entropy)
 ### 条件熵(Conditional Entropy)
 ### 相对熵(Relative Entropy，也称为KL散度，Kullback–Leibler divergence)

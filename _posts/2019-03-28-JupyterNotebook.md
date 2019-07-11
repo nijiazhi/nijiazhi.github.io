@@ -99,7 +99,7 @@ Jupyter有两种启动方式比较常用：
 
 ---
 
-## 相关引用
+# 相关引用
 1. [Jupyter官网](https://jupyter.org/)
 2. [Jupyter魔法命令](https://blog.csdn.net/sinat_22840937/article/details/80315378)
 3. [Jupyter插件jupyter_contrib_nbextensions](https://github.com/jcb91/jupyter_contrib_nbextensions)
