@@ -2,7 +2,7 @@
 layout: post
 title: 基础机器学习：决策树
 categories: [Machine Learning]
-tags: decision tree
+tags: decision-tree
 ---
 
 ## 背景
