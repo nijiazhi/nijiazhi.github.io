@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 你真的了解逻辑回归？
-categories: [LogisticRegression]
+categories: [机器学习]
 tags: LogisticRegression
 ---
 

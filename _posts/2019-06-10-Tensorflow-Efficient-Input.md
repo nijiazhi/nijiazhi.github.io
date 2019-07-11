@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tensorflow：高效输入数据
-categories: [Tensorflow]
+categories: [深度学习]
 tags: Tensorflow
 ---
 
