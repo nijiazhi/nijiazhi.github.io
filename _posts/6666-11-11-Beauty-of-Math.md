@@ -49,6 +49,9 @@ $f(x)=|x|，K=1$  符合利普希茨(Lipschitz)条件。
 因为f(x)在x=0处是不可微的，由此可见符合Lipschitz条件的函数未必处处可微。 
 
 
+## 
+
+
 
 
 
@@ -56,3 +59,4 @@ $f(x)=|x|，K=1$  符合利普希茨(Lipschitz)条件。
 ---
 # 相关引用
 1. [Lipschitz常数、Lipschitz条件](https://blog.csdn.net/Chaolei3/article/details/81202544)
+2. [Jensen不等式-维基百科](https://en.wikipedia.org/wiki/Jensen%27s_inequality)
