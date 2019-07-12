@@ -51,4 +51,4 @@ tags: MaximumEntropyModel
 3. [相对熵-百度百科](https://baike.baidu.com/item/%E7%9B%B8%E5%AF%B9%E7%86%B5/4233536?fr=aladdin)
 4. [信息论：熵与互信息](https://blog.csdn.net/pipisorry/article/details/51695283)
 5. [最大熵模型中的对数似然函数的解释](https://blog.csdn.net/wkebj/article/details/77965714)
-6. [概率论：$p(x|theta)$和$p(x;theta)$的区别](https://blog.csdn.net/pipisorry/article/details/42715245)
+6. [概率论：p(x\|theta)和p(x;theta)的区别](https://blog.csdn.net/pipisorry/article/details/42715245)
