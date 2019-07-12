@@ -21,7 +21,7 @@ tags: Math
 ## Laplace平滑
 中文名称：拉普拉斯平滑
 
-在估计条件概率$$P(X|Y)$$时出现概率为0的情况怎么办？
+在估计条件概率$$P(X\|Y)$$时出现概率为0的情况怎么办？
 
 简单来说：引入$λ，当λ=1$时称为拉普拉斯平滑。
 
@@ -57,9 +57,7 @@ Jensen不等式是关于凸函数性质的不等式，它和凸函数的定义�
 凸函数是一个定义在某个向量空间的凸子集$C$(区间)上的实值函数$f$，如果在其定义域$C$上的任意两点$x_1, x_2, 0<=\lambda<=1$ ，有
 
 $$
-\begin{aligned}
-   \lambda f(x_1)-(1-\lambda)f(x_2) \geq f(\lambda x_1+(1-\lambda)x_2)
-\end{aligned}
+   \lambda f(x_1)-(1-\lambda)f(x_2) \geq f(\lambda x_1+(1-\lambda)x_2) \eqno{(1)}
 $$
 
 若对于任意点集${x_i}$，若$\lambda_i \geq 0$且$\sum_{i=1} \lambda_i=1$
