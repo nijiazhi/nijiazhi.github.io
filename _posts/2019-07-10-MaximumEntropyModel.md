@@ -52,3 +52,4 @@ tags: MaximumEntropyModel
 4. [信息论：熵与互信息](https://blog.csdn.net/pipisorry/article/details/51695283)
 5. [最大熵模型中的对数似然函数的解释](https://blog.csdn.net/wkebj/article/details/77965714)
 6. [概率论：p(x\|theta)和p(x;theta)的区别](https://blog.csdn.net/pipisorry/article/details/42715245)
+<!-- \|表示转义 -->

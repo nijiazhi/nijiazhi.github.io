@@ -53,17 +53,17 @@ $f(x)=|x|，K=1$  符合利普希茨(Lipschitz)条件。
 ## Jensen 不等式
 Jensen不等式是关于凸函数性质的不等式，它和凸函数的定义是息息相关的。主要有以下两种应用场景：
 
-- Jensen不等式的两点形式(凸函数常规性质)
+- **Jensen不等式的两点形式(凸函数常规性质)**
 
-凸函数是一个定义在某个向量空间的凸子集$C(区间)$上的实值函数$f$，如果在其定义域$C$上的任意两点$x_1, x_2, 0<=\lambda<=1$ ，有
+凸函数是一个定义在某个向量空间的凸子集$C$(区间)上的实值函数$f$，如果在其定义域$C$上的任意两点$x_1, x_2, 0<=\lambda<=1$ ，有
 
 $$
 \begin{aligned}
-   \lambda f(x_1)-(1-\lambda)f(x_2)| >= f(\lambda x_1+(1-\lambda)x_2)
+   \lambdaf(x_1)-(1-\lambda)f(x_2) \geq f(\lambda x_1+(1-\lambda)x_2)
 \end{aligned}
 $$
 
-若对于任意点集${x_i}$，若$\lambda_i>=0$且$\sum_{i=1} \lambda_i=1$
+若对于任意点集${x_i}$，若$\lambda_i \geq 0$且$\sum_{i=1} \lambda_i=1$
 
 $$
 \begin{aligned}
@@ -71,7 +71,7 @@ $$
 \end{aligned}
 $$
 
-- 期望的大小判断
+- **期望的大小判断**
 
 在概率论中，如果把$\lambda_i$看成取值为$x_i$的离散变量$X$的概率分布，那么可以写成
 
@@ -97,4 +97,8 @@ $$
 ---
 # Latex使用
 1. [Latex数学符号](https://blog.csdn.net/SSL_ZYC/article/details/80977235)
+
+---
+# markdown使用
+1. [markdown需要转义的字符](https://blog.csdn.net/xianghongai/article/details/78976273)
 
