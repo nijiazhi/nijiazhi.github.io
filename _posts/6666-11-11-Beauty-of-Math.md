@@ -33,11 +33,10 @@ tags: Math
 
 对于函数 $y=f(x)$ 在定义域为$D$上，如果存在$L∈R$ ,且$L>0$，对任意$x1,x2∈D$，有： 
 
-$$
 \begin{equation}
    |f(x_1)-f(f_x2)| <= L*|x_1-x_2|
 \end{equation}
-$$
+
 
 **定理的大白话翻译**：
 存在一个实数$L$，使得对于函数$f(x)$上的每对点，连接它们的线的斜率的绝对值不大于这个实数$L$。
@@ -59,7 +58,7 @@ Jensen不等式是关于凸函数性质的不等式，它和凸函数的定义�
 
 $$
 \begin{aligned}
-   \lambdaf(x_1)-(1-\lambda)f(x_2) \geq f(\lambda x_1+(1-\lambda)x_2)
+   \lambda f(x_1)-(1-\lambda)f(x_2) \geq f(\lambda x_1+(1-\lambda)x_2)
 \end{aligned}
 $$
 
@@ -67,7 +66,7 @@ $$
 
 $$
 \begin{aligned}
-   \f(\sum_{i=1}^{M} \lambda_i x_i) \leq \sum_{i=1}^{M} \lambda_i f(x_i)
+   f(\sum_{i=1}^{M} \lambda_i x_i) \leq \sum_{i=1}^{M} \lambda_i f(x_i)
 \end{aligned}
 $$
 
@@ -77,7 +76,7 @@ $$
 
 $$
 \begin{equation}
-   f(E[x]) <= E[f(x)]
+   f(E[x]) \leq E[f(x)]
 \end{equation}
 $$
 
@@ -97,6 +96,9 @@ $$
 ---
 # Latex使用
 1. [Latex数学符号](https://blog.csdn.net/SSL_ZYC/article/details/80977235)
+2. [Latex大型运算符上下标](https://blog.csdn.net/hfut_jf/article/details/51043642)
+3. [latex公式标号测试](https://blog.csdn.net/itnerd/article/details/86001278)
+4. [Latex公式与编号](https://www.xuebuyuan.com/3260115.html)
 
 ---
 # markdown使用
