@@ -10,6 +10,7 @@ tags: Math
 - [背景](#背景)
 - [Laplace平滑](#Laplace平滑)
 - [Lipschitz条件](#Lipschitz条件)
+- [Jensen不等式](#Jensen不等式)
 <!-- /TOC -->
 
 ---
@@ -49,7 +50,11 @@ $f(x)=|x|，K=1$  符合利普希茨(Lipschitz)条件。
 因为f(x)在x=0处是不可微的，由此可见符合Lipschitz条件的函数未必处处可微。 
 
 
-## 
+## Jensen 不等式
+Jensen不等式是关于凸函数性质的不等式，它和凸函数的定义是息息相关的。主要有以下两种应用场景：
+- 凸函数的常规使用场景
+
+- 期望的大小判断
 
 
 
@@ -60,3 +65,4 @@ $f(x)=|x|，K=1$  符合利普希茨(Lipschitz)条件。
 # 相关引用
 1. [Lipschitz常数、Lipschitz条件](https://blog.csdn.net/Chaolei3/article/details/81202544)
 2. [Jensen不等式-维基百科](https://en.wikipedia.org/wiki/Jensen%27s_inequality)
+3. [如何理解 Jensen 不等式？](https://www.zhihu.com/question/53866462)
