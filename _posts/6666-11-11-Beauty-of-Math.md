@@ -86,9 +86,10 @@ $$
 
 ---
 # 相关引用
-1. [Lipschitz常数、Lipschitz条件](https://blog.csdn.net/Chaolei3/article/details/81202544)
-2. [Jensen不等式-维基百科](https://en.wikipedia.org/wiki/Jensen%27s_inequality)
-3. [如何理解 Jensen 不等式？](https://www.zhihu.com/question/53866462)
+1. [拉普拉斯平滑处理 Laplace Smoothing](https://blog.csdn.net/bbbeoy/article/details/71249316)
+2. [Lipschitz常数、Lipschitz条件](https://blog.csdn.net/Chaolei3/article/details/81202544)
+3. [Jensen不等式-维基百科](https://en.wikipedia.org/wiki/Jensen%27s_inequality)
+4. [如何理解 Jensen 不等式？](https://www.zhihu.com/question/53866462)
 
 
 ---
