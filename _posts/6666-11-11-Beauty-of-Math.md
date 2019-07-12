@@ -56,7 +56,9 @@ Jensen不等式是关于凸函数性质的不等式，它和凸函数的定义�
 
 凸函数是一个定义在某个向量空间的凸子集$C$(区间)上的实值函数$f$，如果在其定义域$C$上的任意两点$x_1, x_2, 0<=\lambda<=1$ ，有
 
-$$\lambda f(x_1)-(1-\lambda)f(x_2) \geq f(\lambda x_1+(1-\lambda)x_2) \eqno{(1)}$$
+$$
+\lambda f(x_1)-(1-\lambda)f(x_2) \geq f(\lambda x_1+(1-\lambda)x_2)
+$$
 
 若对于任意点集${x_i}$，若$\lambda_i \geq 0$且$\sum_{i=1} \lambda_i=1$
 
