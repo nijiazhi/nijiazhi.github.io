@@ -31,7 +31,10 @@ tags: MaximumEntropyModel
 ## 关于熵的几个概念
 话不多说，我先上个图，理解了这个图，下面的介绍就都没问题了。
 ![1](/assets/images/blog/\maximumEntropyModel/1.png)
-![2](/assets/images/blog/\maximumEntropyModel/2.png)
+<!-- ![2](/assets/images/blog/\maximumEntropyModel/2.png) -->
+<img src="/assets/images/blog/\maximumEntropyModel/2.png" width="50" hegiht="50" align=center />
+
+
 
 ### 自信息(Self-information)
 ### 熵(Entropy)
