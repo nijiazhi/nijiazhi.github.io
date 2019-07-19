@@ -13,12 +13,13 @@ tags: Eigen
 ---
 ## 常用矩阵
 ```
-MatrixXf::Zero(3,4);     // 将矩阵3行4列初始化为0
-MatrixXf::Ones(3,3);     // 将矩阵3行3列初始化为1
-Vector3f::Ones();        // 将3行的纵向量初始化为1
-MatrixXi::Identity(3,3); //单位阵
-Matrix3d::Random();//随机矩阵
-注意对动态矩阵初始化的时候，必须指定行数和列数。
+MatrixXf::Zero(3,4);         // 将矩阵3行4列初始化为0
+MatrixXf::Ones(3,3);         // 将矩阵3行3列初始化为1
+Vector3f::Ones();            // 将3行的纵向量初始化为1
+MatrixXi::Identity(3,3);     //单位阵
+Matrix3d::Random();          //随机矩阵
+
+注意：对动态矩阵初始化的时候，必须指定行数和列数。
 ```
 
 ## 矩阵特定初始化
