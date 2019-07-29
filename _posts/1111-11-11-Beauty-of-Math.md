@@ -6,12 +6,12 @@ tags: Math
 ---
 
 ### Index
-[TOC]
+<!-- [TOC] -->
 <!-- TOC -->
-<!-- - [背景](#背景)
+- [背景](#背景)
 - [Laplace平滑](#Laplace平滑)
 - [Lipschitz条件](#Lipschitz条件)
-- [Jensen不等式](#Jensen不等式) -->
+- [Jensen不等式](#Jensen不等式)
 <!-- /TOC -->
 
 ---
