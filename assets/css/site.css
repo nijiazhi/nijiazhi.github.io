@@ -194,7 +194,7 @@ h3 {
   margin-right: 1em;
 }
 
-section ul{
+section ul.show-list{
   padding-left: 0em;
   list-style-type:square;
   font-size: 0.9rem;

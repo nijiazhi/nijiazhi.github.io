@@ -8,23 +8,24 @@ description: I am Andyni, welcome!
 <section class="about-me inner">
   <h1>
     <span class="hello">
-      <em>Welcome</em>
+      <em>About me</em>
     </span>
   </h1>
 
   <p>
-    I am Jiazhi Ni, an Algorithm Engineer in <a href="https://www.tencent.com/">Tencent </a>. I completed Master's degree in <a href="http://www.iscas.ac.cn/">Institute of Software, Chinese Academy of Sciences</a> on June 20, 2017. I support <strong> Open Source </strong> (@<a href="http://github.com/nijiazhi">nijiazhi<i class="icon-github"></i></a>), love coding and thinking. And i like to participate in some data mining competitions.
+    I am Jiazhi Ni, an Algorithm Engineer in <a href="https://www.tencent.com/">Tencent </a>. I completed Master's degree in <a href="http://www.iscas.ac.cn/">Institute of Software, Chinese Academy of Sciences</a> on June 20, 2017. I support <strong> Open Source </strong> (@<a href="http://github.com/nijiazhi">nijiazhi<i class="icon-github"></i></a>), love coding and thinking. Moreover, i especially like to challenge myself in the data mining competitions.
   </p>
   <p>
     In my free time, I dive into <strong> Magic </strong> and perform many magic shows. I also love sports, like table tennis, swimming, badminton, football, billiards, etc. If you have the same hobby, we can communicate offline. That's so cool ~
   </p>
-
   <p>
      My <strong> Research Interests </strong> cover the topics below:
-     <ul>Health Data Mining</ul>
-     <ul>Finger Location Algorithm (Rank Problem)</ul> 
-     <ul>Patient Portrait</ul>
-     <ul>Deep Metric Learning</ul>
+     <ul class="show-list">
+        <li>Health Data Mining</li>
+        <li>Finger Location Algorithm (Rank Problem)</li>
+        <li>Patient Portrait</li>
+        <li>Deep Metric Learning</li>
+     </ul>
   <p>
 </section>
 
@@ -36,32 +37,31 @@ description: I am Andyni, welcome!
     <ul>
       {% for post in site.posts limit:3 %}
       <li class="post-list-in-index">
-      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small><a  href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>
   </blockquote>
   <div class="spacer"></div>
+</section>
 
+<section class="inner">
   <p>
     If you are interested in me, you can access to my <a href="/nijiazhi_resume.pdf"><strong>Resume</strong></a> for more details.
   </p>
   <p>
     Email: <a href=https://mail.qq.com/">954142793@qq.com</a>
-  </p>
-  <p>
-    知乎：<a href="https://www.zhihu.com/people/andy-3-36/activities">写代码的段子手</a>
-  </p>
-  <p>
-    google scholar: <a href="https://scholar.google.com/citations?user=hHi46EcAAAAJ">Jiazhi Ni</a>
-  </p>
-  <p>
+    Google Scholar: <a href="https://scholar.google.com/citations?user=hHi46EcAAAAJ">Jiazhi Ni</a>
     Github: <a href="https://github.com/nijiazhi">github.com/nijiazhi</a>
-  </p>
-  <p>
+    知乎：<a href="https://www.zhihu.com/people/andy-3-36/activities">写代码的段子手</a>
     码云Git：<a href="https://gitee.com/nijiazhi/events">gitee.com/nijiazhi</a>
-  </p>
-  <p>
     开源中国：<a href="https://my.oschina.net/njz">njz_andy</a>
+    <ul class="show-list">
+      <li>Health Data Mining</li>
+      <li>Finger Location Algorithm (Rank Problem)</li>
+      <li>Patient Portrait</li>
+      <li>Deep Metric Learning</li>
+    </ul>
   </p>
 </section>
