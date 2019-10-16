@@ -194,17 +194,15 @@ h3 {
   margin-right: 1em;
 }
 
-/*section ul.show-list{
+section ul.show-list{
   padding-left: 1em;
   list-style-type: square;
   font-size: 0.9rem;
-}*/
-
-section ul{
-  padding-left: 0em;
 }
 
-
+section ul.blog-list{
+  padding-left: 0em;
+}
 
 
 /**设置引用格式**/
