@@ -195,10 +195,13 @@ h3 {
 }
 
 section ul.show-list{
-  /*margin: 0px 0px 10px;*/
-  padding-left: 10px;
+  padding-left: 1em;
   list-style-type: square;
   font-size: 0.9rem;
+}
+
+section ul{
+  padding-left: 0em;
 }
 
 
