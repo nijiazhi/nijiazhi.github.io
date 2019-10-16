@@ -195,14 +195,11 @@ h3 {
 }
 
 section ul.show-list{
-  padding-left: 1em;
+  /*padding-left: 1em;*/
   list-style-type: square;
   font-size: 0.9rem;
 }
 
-section ul{
-  padding-left: 0em;
-}
 
 
 /**设置引用格式**/
