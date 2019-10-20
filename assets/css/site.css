@@ -20,7 +20,7 @@ body {
 p{
   text-align: justify;
   margin: 1em 0;
-  }
+}
 
 /*添加段与段之间的分割线样式*/
 hr {
@@ -36,7 +36,7 @@ p {
     text-align:justify;
     -webkit-text-align-last:justify;/*chrome 20+*/
     font-size: 0.9rem;
-    }
+}
 
 table {
   font-size: inherit;
@@ -194,9 +194,16 @@ h3 {
   margin-right: 1em;
 }
 
-section ul{
+section ul.show-list{
+  padding-left: 1em;
+  list-style-type: square;
+  font-size: 0.9rem;
+}
+
+section ul.blog-list{
   padding-left: 0em;
 }
+
 
 /**设置引用格式**/
 blockquote {
