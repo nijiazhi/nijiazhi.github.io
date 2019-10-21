@@ -17,10 +17,10 @@ body {
   font-size: 100%;
 }
 
-p{
+/*p{
   text-align: justify;
   margin: 1em 0;
-}
+}*/
 
 /*添加段与段之间的分割线样式*/
 hr {
@@ -29,6 +29,11 @@ hr {
     margin-top:2em;
     margin-bottom: 2em;
 }
+
+.paper-detail {
+    font-size: 0.9rem;
+}
+
 
 p {
     margin: 0px 0px 10px;
