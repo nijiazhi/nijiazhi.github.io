@@ -24,7 +24,7 @@ iris是一个已经离职创业的海龟女，在国外读研、工作，回国4
 一个很有趣的观点:
 - option A: 幸福指数大起大落，通常与自我价值低打包，下楼容易上楼难，是否能爬上去有强烈的不确定性
 - option B: 幸福指数平稳，通常与恒定的自我价值认同感打包（是不是有点眼熟？经济学中的价格围绕价值上下波动），自我价值认同感就是向内求的价值了，求积分也会比较大，积分大概比与optionA高
-![jupyter](/assets/images/blog/life/happiness-principle.png)
+![value](/assets/images/blog/life/happiness-principle.png)
 
 
 ### about me
