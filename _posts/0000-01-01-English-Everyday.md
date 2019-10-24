@@ -7,13 +7,13 @@ tags: English-Practice
 
 ### Index
 <!-- TOC -->
-- [One Sentence Structure and Topic a Day](#One-Sentence-Structure-and-Topic-a-Day)
+- [One Sentence Structure a Day](#One Sentence Structure a Day)
 - [](#)
 <!-- /TOC -->
 
 
 ---
-# One-Sentence-Structure-and-Topic-a-Day<!-- 居中显示 -->
+# One Sentence Structure a Day<!-- 居中显示 -->
 
 ### 20191023 - driving terms
 > Doing sth is + adjective
