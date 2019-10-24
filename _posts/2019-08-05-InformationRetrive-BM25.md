@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 信息检索排序模型-BM25
-categories: [InformationRetrieval-BM25]
+categories: [InformationRetrieval]
 tags: BM25
 ---
 
