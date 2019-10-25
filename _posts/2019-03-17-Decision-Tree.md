@@ -198,7 +198,7 @@ $$
 
 $$
 \begin{aligned}
-g(D, A_1) & = H(D) - H(D|A) \\
+g(D, A_1) & = H(D) - H(D|A) \\\\
 & = H(D) - \left(\frac{3}{5}H(D_1) + \frac{2}{5}H(D_2)\right) \\\\
 & = H(D) - \left[\frac{3}{5}\left((-\frac{2}{3})log_2\frac{2}{3} + (-\frac{1}{3})log_2\frac{1}{3}\right) + \frac{2}{5}(-1)log_21\right] \\\\
 & = H(D) + \frac{2}{5}log_2\frac{2}{3} + \frac{1}{5}log_2\frac{1}{3}
