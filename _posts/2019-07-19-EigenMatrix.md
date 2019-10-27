@@ -5,12 +5,6 @@ categories: [Programming Tools]
 tags: Eigen
 ---
 
-### Index
-<!-- TOC -->
-- [常见命令](#常见命令)
-<!-- /TOC -->
-
----
 ## 常用矩阵
 ```
 MatrixXf::Zero(3,4);         // 将矩阵3行4列初始化为0
