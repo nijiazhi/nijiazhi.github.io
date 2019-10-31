@@ -16,22 +16,92 @@ tags: LogisticRegression
 ---
 ## 背景
 
+在各种机器学习入门教程中，逻辑回归模型（Logistic/Logit Regression）经常被拿来作为入门的机器学习模型，各种面试中手推逻辑回归也变成了一个必考科目。看起来，逻辑回归模型好像很简单，甚至容易被认为是一个拍脑袋想出的naive的模型。在这里，想问问你，你真的了解逻辑回归么？（本篇博客的逻辑框架参考了夕小瑶的文章，她确实思路很赞）
+
+
 ## 常用的符号表示
 
 | 符号 | 含义 |
 |:-----------:|:--------------------:|
 | $$p$$           | 概率  |
 
+---
+# 浅入·逻辑回归
 
-## Logit函数
+逻辑回归模型是用于**二类分类**的机器学习模型，有个几个注意点千万要懂：
+
+- 不要说逻辑回归是一个回归模型啊！（虽然里面有线性回归的内容在，但它是做分类的)
+- 不要说逻辑回归可以做多类分类啊！（那是二类分类器的组合策略问题，而与逻辑回归分类器本身的构造没有半毛钱关系）
+
+
+---
+# 深出·逻辑回归
+
+## Logit模型和Logistic模型 
+
+
+### Logit函数
+
+Logit可以理解成Log-it，这里的it指的是**Odds**（“几率”，等于$p/1-p$）。一个Logit变换的过程如下图所示：
+
+![logit](/assets/images/blog/LogisticRegression/logit.png)
+
+在统计学中，Logit函数也称为log-odds函数，它可以将概率值p（区间为$[0, 1]$）映射到$(-\infty， +\infty)$，图像如下：
+
+![logit-pic](/assets/images/blog/LogisticRegression/logit-pic.png)
+
+Logit函数的数学变换如下：
 
 $$
 \begin{aligned}
-   logit(p) & = \log{\frac{p}{1-p}} \\
-            & = \log{p} -log{1-p} \\
-            & = -\log{\frac{1}{p} - 1}
+   logit(p) & = \log{\left( \frac{p}{1-p} \right)} \\
+            & = \log{(p)} -log{(1-p)} \\
+            & = -\log{\left( \frac{1}{p} - 1 \right)}
 \end{aligned}
 $$
+
+### Logit模型 vs Logistic模型
+
+当我们讨论**Logit模型**时候，指的是下面这种形式：
+
+$$
+\begin{aligned}
+   logit(p) & = \log{\left( \frac{p}{1-p} \right)} \\
+            & = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n
+\end{aligned}
+$$
+
+注意，等号右侧是自变量的线性组合（是不是快想到了线性回归？）。当我们只考虑**一个自变量**时：
+
+$$
+\begin{aligned}
+   \log{\left( \frac{p}{1-p} \right)} = \beta_0 + \beta_1 x_1
+\end{aligned}
+$$
+
+两边同时做指数运算：
+
+$$
+\begin{aligned}
+   \left( \frac{p}{1-p} \right) = \exp{\beta_0 + \beta_1 x_1}
+\end{aligned}
+$$
+
+最后，整理一下，可以得到：
+
+$$
+\begin{aligned}
+   p & = \frac{\exp{\beta_0 + \beta_1 x_1}}{1+\exp{\beta_0 + \beta_1 x_1}} \\
+     & = \frac{1}{1+\exp{-(\beta_0 + \beta_1 x_1)}}
+\end{aligned}
+$$
+
+哎呦，你看上式不就是Logistic模型么。所以这两个模型对应的函数，其实是互逆的。小结一下：
+
+- Logit模型的左侧是Odds的对数，而Logistic模型的左侧是概率
+- Logit模型的右侧是一个线性结构，而Logistic模型的右侧是非线性的
+- 二者可以相互转化
+
 
 ## Sigmoid函数
 
