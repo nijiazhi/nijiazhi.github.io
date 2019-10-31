@@ -33,9 +33,9 @@ tags: LogisticRegression
 - 不要说逻辑回归是一个回归模型啊！（虽然里面有线性回归的内容在，但它是做分类的)
 - 不要说逻辑回归可以做多类分类啊！（那是二类分类器的组合策略问题，而与逻辑回归分类器本身的构造没有半毛钱关系）
 
-那么，我们怎么将$n$维向量$\vector{x} = [x_1, x_2, \cdots, x_n]$映射成一个点$y$呢？很容易想到就是将向量$\vector{x}$与另一个向量做内积，这个向量我们称为参数$\vector{\theta}$，即$\vector{\theta} = [\theta_1, \theta_2, \cdots, \theta_n]$，所以做内积就是$\vector{x}*\vector{\theta}^T$（即行向量$\vector{x}$ **乘以** 行向量$\vector{\theta}$的转置），最终会得到一个数。
+那么，我们怎么将$n$维向量$\vec{x} = [x_1, x_2, \cdots, x_n]$映射成一个点$y$呢？很容易想到就是将向量$\vec{x}$与另一个向量做内积，这个向量我们称为参数$\vec{\theta}$，即$\vec{\theta} = [\theta_1, \theta_2, \cdots, \theta_n]$，所以做内积就是$\vec{x}*\vec{\theta}^T$（即行向量$\vec{x}$ **乘以** 行向量$\vec{\theta}$的转置），最终会得到一个数。
 
-但是，如果$\vector{x} = [0, 0, \cdots, 0]$时，输出$y$应等于1，那怎么办呢？这时$\vector{x}*\vector{\theta}^T$肯定也是0啊！所以为了解决这个问题，要再加个常数$b$，所以现在是$\vector{x}*\vector{\theta}^T + b$。为了看起来好看简洁，在$\vector{x}$的最开头加个1，把$b$扔到$\theta$的最开头，所以就成了新版的$\vector{x}*\vector{\theta}^T$，当然此时$\vector{x}=[1,\vector{x}], \vector{\theta}=[b, \vector{\theta}]$
+但是，如果$\vec{x} = [0, 0, \cdots, 0]$时，输出$y$应等于1，那怎么办呢？这时$\vec{x}*\vec{\theta}^T$肯定也是0啊！所以为了解决这个问题，要再加个常数$b$，所以现在是$\vec{x}*\vec{\theta}^T + b$。为了看起来好看简洁，在$\vec{x}$的最开头加个1，把$b$扔到$\theta$的最开头，所以就成了新版的$\vec{x}*\vec{\theta}^T$，当然此时$\vec{x}=[1,\vec{x}], \vec{\theta}=[b, \vec{\theta}]$
 
 
 
@@ -89,7 +89,7 @@ $$
 
 $$
 \begin{aligned}
-   \left( \frac{p}{1-p} \right) = e_{\beta_0 + \beta_1 x_1}
+   \left( \frac{p}{1-p} \right) = e^{\beta_0 + \beta_1 x_1}
 \end{aligned}
 $$
 
@@ -97,8 +97,8 @@ $$
 
 $$
 \begin{aligned}
-   p & = \frac{e_{\beta_0 + \beta_1 x_1}}{1+e_{\beta_0 + \beta_1 x_1}} \\
-     & = \frac{1}{1+e_{-(\beta_0 + \beta_1 x_1)}}
+   p & = \frac{e^{\beta_0 + \beta_1 x_1}}{1+e^{\beta_0 + \beta_1 x_1}} \\
+     & = \frac{1}{1+e^{-(\beta_0 + \beta_1 x_1)}}
 \end{aligned}
 $$
 
