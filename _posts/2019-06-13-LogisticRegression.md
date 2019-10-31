@@ -9,7 +9,6 @@ tags: LogisticRegression
 <!-- TOC -->
 - [背景](#背景)
 - [Logit函数](#Logit函数)
-    - [Sigmoid函数](#Sigmoid函数)
 - [Sigmoid函数](#Sigmoid函数)
 - [Softmax函数](#Softmax函数)
 <!-- /TOC -->
@@ -17,7 +16,22 @@ tags: LogisticRegression
 ---
 ## 背景
 
+## 常用的符号表示
+
+| 符号 | 含义 |
+|:-----------:|:--------------------:|
+| $$p$$           | 概率  |
+
+
 ## Logit函数
+
+$$
+\begin{aligned}
+   logit(p) & = \log{\frac{p}{1-p}} \\
+            & = \log{p} -log{1-p} \\
+            & = -\log{\frac{1}{p} - 1}
+\end{aligned}
+$$
 
 ## Sigmoid函数
 
