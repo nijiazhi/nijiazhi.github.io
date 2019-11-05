@@ -37,12 +37,12 @@ tags: LogisticRegression
 
 但是，如果$\vec{x} = [0, 0, \cdots, 0]$时，输出$y$应等于1，那怎么办呢？
 
-这时$\vec{x} * \vec{\theta}^\mathrm{T}$肯定也是0啊！所以为了解决这个问题，要再加个常数$b$，所以现在是$\vec{x}*\vec{\theta}\mathrm{T} + b$。为了看起来好看简洁，在$\vec{x}$的最开头加个1，把$b$扔到$\theta$的最开头，所以就成了新版的$\vec{x}*\vec{\theta}^\mathrm{T}$，当然此时有：
+这时$\vec{x} * \vec{\theta}^\mathrm{T}$肯定也是$0$啊！所以为了解决这个问题，要再加个常数$b$，所以现在是$\vec{x} * \vec{\theta}\mathrm{T} + b$。为了看起来好看简洁，在$\vec{x}$的最开头加个$1$，把$b$扔到$\theta$的最开头，所以就成了新版的$\vec{x} * \vec{\theta}^\mathrm{T}$，当然此时有：
 
 $$
 \begin{cases}
-    \vec{x}=[1,\vec{x}]\\
-    \vec{\theta}=[b, \vec{\theta}]\\
+    \vec{x}      = [1,\ \vec{x}]\\
+    \vec{\theta} = [b,\  \vec{\theta}]\\
 \end{cases}
 $$
 
