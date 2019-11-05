@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 博大精深的线性回归
+title: 博大精深的广义线性模型
 categories: [Machine Learning]
-tags: LineRegression
+tags: Generalized LinearModel
 ---
 
 ### Index
@@ -13,6 +13,7 @@ tags: LineRegression
 ---
 ## 背景
 
+## 指数分布族
 
 ---
 # 相关引用

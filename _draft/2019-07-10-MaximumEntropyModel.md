@@ -60,4 +60,5 @@ tags: MaximumEntropyModel
 4. [信息论：熵与互信息](https://blog.csdn.net/pipisorry/article/details/51695283)
 5. [最大熵模型中的对数似然函数的解释](https://blog.csdn.net/wkebj/article/details/77965714)
 6. [概率论：p(x\|theta)和p(x;theta)的区别](https://blog.csdn.net/pipisorry/article/details/42715245)
+7. [一文搞懂交叉熵在机器学习中的使用，透彻理解交叉熵背后的直觉](https://blog.csdn.net/tsyccnh/article/details/79163834)
 <!-- \|表示转义 -->
