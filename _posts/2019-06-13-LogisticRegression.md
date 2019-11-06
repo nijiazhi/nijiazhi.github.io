@@ -170,8 +170,9 @@ $$
 
 $$
 \begin{cases}
-    p(y=1|x) = \frac{e^{w_0 x+b}}{e^{w_0 x+b} + e^{w_1 x+b}} = \frac{e^{w x+b}}{1 + e^{w x+b}} \\
-    p(y=0|x) = \frac{e^{w_1 x+b}}{e^{w_0 x+b} + e^{w_1 x+b}} = \frac{1}{1 + e^{w x+b}}\\
+    p(y=1|x) = \frac{e^{w_0 x+b}}{e^{w_0 x+b} + \  e^{w_1 x+b}} = \frac{e^{w x+b}}{1 + e^{w x+b}} \\
+    \ \\
+    p(y=0|x) = \frac{e^{w_1 x+b}}{e^{w_0 x+b} + \  e^{w_1 x+b}} = \frac{1}{1 + e^{w x+b}}\\
 \end{cases}
 $$
 
