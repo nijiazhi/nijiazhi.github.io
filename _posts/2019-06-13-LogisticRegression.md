@@ -23,7 +23,8 @@ tags: LogisticRegression
 
 | 符号 | 含义 |
 |:-----------:|:------------:|
-| $$p$$    | 概率  |
+| $p$         | 概率  |
+| $h_\Theta$  | 逻辑回归中判别函数  |
 
 ---
 # 浅入·逻辑回归
@@ -72,7 +73,7 @@ $$
 
 - **问题4，训练模型用的 *损失函数/代价函数/目标函数* 是什么呢？**
 
-大概率，你会毫不犹豫的说出**交叉熵**这三个字，至于为什么会利用到交叉熵，与其相关的自信息、熵、KL散度、二项分布的交叉熵等概念。它的一般形式如下：
+大概率，你会毫不犹豫的说出**交叉熵**这三个字，至于为什么会利用到交叉熵，而不用最小二乘的loss呢？（因为用了sigmoid的非线性+最小二乘导致非凸哈，感兴趣自己画一下）另外，与其相关的自信息、熵、KL散度、二项分布的交叉熵、最大似然等概念，你是否知道呢？（这里先不扯了，最大似然取对数也可以推出交叉熵这个loss）。它的一般形式如下：
 
 $$
 \begin{aligned}
@@ -84,13 +85,29 @@ $$
 
 $$
 \begin{aligned}
-   J(\Theta) = \frac{1}{m} \sum\limits_{i=1}^{m} \left[ -y^{(i)}\log{h_\Theta(x_{(i)})} - (1-y^{(i)})\log{1-h_\Theta(x_{(i)})} \right]
+   J(\Theta) = \frac{1}{m} \sum\limits_{i=1}^{m} \left[ -y^{(i)}\log{h_\Theta(x^{(i)})} - (1-y^{(i)})\log{1-h_\Theta(x^{(i)})} \right]
 \end{aligned}
 $$
 
+这公式看起来很不错呀，仔细一看也看明白，反正当类别预测值与实际类别完全对起来的时候，$J(\Theta$确实等于0的。
 
+- **问题5，如何优化上述目标函数呢？**
 
+答案很清晰了，**梯度下降**应该已经被说烂了吧。除了这个，那你知道为啥不用解析解、怎么应用牛顿法么？（解析解问题参见reference，它的推导有些小问题，但大致思路是对的，因为交叉熵loss和非线性函数，导致求解析解的方程中出现w1*w2，无法求解）。最后，我们给出梯度下降所需的最终求导公式（过程参见手推图片，我太懒了，不想latex公式了）。
 
+$$
+\begin{aligned}
+    \Theta_j := \Theta_j + \alpha \left( y^{(i)} - h_\Theta(x^{(i)}) \right) x^{(i)}_j
+\end{aligned}
+$$
+
+![logistic_gradient](/assets/images/blog/LogisticRegression/logistic_gradient.jpg)
+
+最后，等到$J(\Theta)$收敛到最优值，就得到了最优模型参数$\Theta$
+
+- **问题6，上面几个问题看起来没毛病哈，难道每一步真的都是这么恰好的信手拈来的吗？**
+
+Too young too simle, naive !!!
 
 
 
@@ -165,6 +182,7 @@ $$
 
 ## Sigmoid函数
 
+
 ## Softmax函数
 
 ---
@@ -173,3 +191,5 @@ $$
 2. [浅入深出被人看扁的逻辑回归](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247484011&idx=1&sn=42e4f331db843091c5c3809a4d259fad&chksm=970c2abda07ba3abb3963c2defcc644582f28bbdc23f3d669d022cd032e637d2ca8b6b48ca62&scene=21#wechat_redirect)
 3. [深入深出Sigmoid与Softmax的血缘关系](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247484122&idx=1&sn=41628bf3169b9ef3fa107646d483bae5&chksm=970c2a0ca07ba31ae1939e316c15695c83556c347e0b38bb80dde3048533de7de388ec2a6544&scene=21#wechat_redirect)
 4. [Logit模型和Logistic模型有什么区别？](https://zhuanlan.zhihu.com/p/30659982)
+5. [Why is the error function minimized in logistic regression convex?](http://mathgotchas.blogspot.com/2011/10/why-is-error-function-minimized-in.html)
+6. [为什么LR的MLE无法求解析解？](https://www.zhihu.com/question/45962137)
