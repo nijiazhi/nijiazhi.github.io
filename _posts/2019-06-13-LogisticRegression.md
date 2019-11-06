@@ -146,15 +146,15 @@ $$
 
 ## Softmax函数与Sigmoid的血缘关系
 
-先等等，还记得深度学习中经常加在神经网络的顶层来求后验概率$$p(y=j|X)$$的Softmax函数吗？对就是下面这个熟悉的函数：
+先等等，还记得深度学习中经常加在神经网络的顶层来求后验概率$$p(y=j\|x)$$的Softmax函数吗？对就是下面这个熟悉的函数：
 
 $$
 \begin{aligned}
-   p(y=j|x) = \frac{e^{x^\mathrm{T}} w_j}{\sum\limits_{k=1}^{K} e^{x^\mathrm{T}} w_k}
+   p(y=j|x) = \frac{e^{x^\mathrm{T}} w_j}{\sum_{k=1}^{K} e^{x^\mathrm{T}} w_k}
 \end{aligned}
 $$
 
-对于我们的二分类问题来说，有$p(y=0|X)+p(y=1|X)=1$，那么如果我们令logit公式中的$q=p(y=1|x)$呢？然后$p(y=1|x)$用softmax函数表示呢？看看下面优美的推导：
+对于我们的二分类问题来说，有$p(y=0|X)+p(y=1|X)=1$，那么如果我们令logit公式中的$q=p(y=1\|x)$呢？然后$p(y=1\|x)$用softmax函数表示呢？看看下面优美的推导：
 
 $$
 \begin{aligned}
