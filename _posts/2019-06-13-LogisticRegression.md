@@ -29,8 +29,9 @@ tags: LogisticRegression
 | 符号 | 含义 |
 |:-----------:|:------------:|
 | $p$         | 概率  |
-| $h_\Theta$  | 逻辑回归中判别函数  |
-| $h_w$       | 逻辑回归中判别函数（和上式相同，$w$和$\Theta$都表示参数）  |
+| $h_\Theta(x)$  | 逻辑回归中判别函数  |
+| $h_w(x)$       | 逻辑回归中判别函数（和上式相同，$w$和$\Theta$都表示参数）  |
+| $J(w)$       | 逻辑回归目标函数 |
 
 ---
 # 浅入·逻辑回归
@@ -333,3 +334,16 @@ $w_1$与$x$的内积代表着$w_1$与$x$的亲密度，这个不就代表着“�
 4. [Logit模型和Logistic模型有什么区别？](https://zhuanlan.zhihu.com/p/30659982)
 5. [Why is the error function minimized in logistic regression convex?](http://mathgotchas.blogspot.com/2011/10/why-is-error-function-minimized-in.html)
 6. [为什么LR的MLE无法求解析解？](https://www.zhihu.com/question/45962137)
+
+---
+# Appendix
+
+## 常见求导公式
+![appendix_0](/assets/images/blog/LogisticRegression/appendix_0.png)
+
+## 常见求导法则
+![appendix_1](/assets/images/blog/LogisticRegression/appendix_1.png)
+
+## 复合函数求导法则
+![appendix_2](/assets/images/blog/LogisticRegression/appendix_2.png)
+
